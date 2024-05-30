@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="21" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-28T12:01:37Z" name="MyTestSuite" finished-at="2024-05-28T12:05:43Z" duration-ms="245866">
+    <groups>
+    </groups>
+    <test started-at="2024-05-28T12:01:37Z" name="MyTest" finished-at="2024-05-28T12:05:43Z" duration-ms="245866">
+      <class name="com.runner.userList_Runner">
+        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:31:51Z" name="createUser" data-provider="userData" finished-at="2024-05-28T17:32:23Z" duration-ms="31190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Srinivasan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sud]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sivasri691995@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:32:23Z" name="createUser" data-provider="userData" finished-at="2024-05-28T17:32:54Z" duration-ms="31469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[James]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[smithjamesjs7189@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Data Scientist]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:32:54Z" name="createUser" data-provider="userData" finished-at="2024-05-28T17:33:25Z" duration-ms="30899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[William]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[johnwillamsjw2000@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Developer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="searchCustomer()[pri:1, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:33:25Z" name="searchCustomer" finished-at="2024-05-28T17:33:33Z" duration-ms="7520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCustomer -->
+        <test-method signature="searchDatascientist()[pri:2, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:33:33Z" name="searchDatascientist" finished-at="2024-05-28T17:33:40Z" duration-ms="7482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDatascientist -->
+        <test-method signature="searchDeveloper()[pri:3, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:33:40Z" name="searchDeveloper" finished-at="2024-05-28T17:33:49Z" duration-ms="9342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDeveloper -->
+        <test-method signature="deleteCustomer()[pri:4, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:33:49Z" name="deleteCustomer" finished-at="2024-05-28T17:34:02Z" duration-ms="12719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method signature="deleteDatascientist()[pri:5, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:34:02Z" name="deleteDatascientist" finished-at="2024-05-28T17:34:15Z" duration-ms="12542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDatascientist -->
+        <test-method signature="deleteDeveloper()[pri:6, instance:com.runner.userList_Runner@5e7cd6cc]" started-at="2024-05-28T17:34:15Z" name="deleteDeveloper" finished-at="2024-05-28T17:34:30Z" duration-ms="15139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDeveloper -->
+      </class> <!-- com.runner.userList_Runner -->
+      <class name="com.runner.viewProfile_Runner">
+        <test-method signature="clickChangePassword()[pri:0, instance:com.runner.viewProfile_Runner@68c9d179]" started-at="2024-05-28T17:34:30Z" name="clickChangePassword" finished-at="2024-05-28T17:34:32Z" depends-on-methods="com.runner.userList_Runner.deleteDeveloper" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickChangePassword -->
+        <test-method signature="changePassword()[pri:1, instance:com.runner.viewProfile_Runner@68c9d179]" started-at="2024-05-28T17:34:32Z" name="changePassword" finished-at="2024-05-28T17:34:34Z" depends-on-methods="com.runner.viewProfile_Runner.clickChangePassword" duration-ms="2640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePassword -->
+        <test-method signature="checkLogin()[pri:2, instance:com.runner.viewProfile_Runner@68c9d179]" started-at="2024-05-28T17:34:35Z" name="checkLogin" finished-at="2024-05-28T17:34:40Z" depends-on-methods="com.runner.viewProfile_Runner.changePassword" duration-ms="5413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin -->
+        <test-method signature="logOut()[pri:3, instance:com.runner.viewProfile_Runner@68c9d179]" started-at="2024-05-28T17:34:40Z" name="logOut" finished-at="2024-05-28T17:34:43Z" depends-on-methods="com.runner.viewProfile_Runner.checkLogin" duration-ms="3222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- com.runner.viewProfile_Runner -->
+      <class name="com.runner.Customer_View_Profile_Runner">
+        <test-method signature="clickChangeCustomerPassword()[pri:0, instance:com.runner.Customer_View_Profile_Runner@6a8658ff]" started-at="2024-05-28T17:35:19Z" name="clickChangeCustomerPassword" finished-at="2024-05-28T17:35:31Z" depends-on-methods="com.runner.CustomerDashboard_Runner.uploadDataset" duration-ms="11748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickChangeCustomerPassword -->
+        <test-method signature="changeCustomerPassword()[pri:1, instance:com.runner.Customer_View_Profile_Runner@6a8658ff]" started-at="2024-05-28T17:35:31Z" name="changeCustomerPassword" finished-at="2024-05-28T17:35:34Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.clickChangeCustomerPassword" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeCustomerPassword -->
+        <test-method signature="checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@6a8658ff]" started-at="2024-05-28T17:35:34Z" name="checkCustomerLogin" finished-at="2024-05-28T17:35:39Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.changeCustomerPassword" duration-ms="5652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCustomerLogin -->
+        <test-method signature="logOut()[pri:3, instance:com.runner.Customer_View_Profile_Runner@6a8658ff]" started-at="2024-05-28T17:35:39Z" name="logOut" finished-at="2024-05-28T17:35:43Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.checkCustomerLogin" duration-ms="3235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- com.runner.Customer_View_Profile_Runner -->
+      <class name="com.runner.CustomerLogin_Runner">
+        <test-method signature="setUp()[pri:0, instance:com.runner.CustomerLogin_Runner@33ecda92]" started-at="2024-05-28T17:34:43Z" name="setUp" finished-at="2024-05-28T17:34:48Z" depends-on-methods="com.runner.viewProfile_Runner.logOut" duration-ms="4577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginCustomer()[pri:1, instance:com.runner.CustomerLogin_Runner@33ecda92]" started-at="2024-05-28T17:34:48Z" name="loginCustomer" finished-at="2024-05-28T17:34:57Z" depends-on-methods="com.runner.CustomerLogin_Runner.setUp" duration-ms="9738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCustomer -->
+      </class> <!-- com.runner.CustomerLogin_Runner -->
+      <class name="com.runner.Login_Runner">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.runner.Login_Runner@4b8d604b]" started-at="2024-05-28T17:31:37Z" name="setUp" finished-at="2024-05-28T17:31:45Z" duration-ms="8593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginUser()[pri:0, instance:com.runner.Login_Runner@4b8d604b]" started-at="2024-05-28T17:31:45Z" name="loginUser" finished-at="2024-05-28T17:31:51Z" duration-ms="6204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+      </class> <!-- com.runner.Login_Runner -->
+      <class name="com.runner.CustomerDashboard_Runner">
+        <test-method signature="uploadDataset()[pri:0, instance:com.runner.CustomerDashboard_Runner@6e2829c7]" started-at="2024-05-28T17:34:57Z" name="uploadDataset" finished-at="2024-05-28T17:35:19Z" depends-on-methods="com.runner.CustomerLogin_Runner.loginCustomer" duration-ms="21628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadDataset -->
+      </class> <!-- com.runner.CustomerDashboard_Runner -->
+    </test> <!-- MyTest -->
+  </suite> <!-- MyTestSuite -->
+</testng-results>

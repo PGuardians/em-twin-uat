@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test name="MyTest">
+    <classes>
+      <class name="com.runner.Login_Runner"/>
+      <class name="com.runner.userList_Runner"/>
+      <class name="com.runner.viewProfile_Runner"/>
+      <class name="com.runner.CustomerLogin_Runner"/>
+      <class name="com.runner.CustomerDashboard_Runner"/>
+      <class name="com.runner.Customer_View_Profile_Runner"/>
+    </classes>
+  </test> <!-- MyTest -->
+</suite> <!-- Failed suite [MyTestSuite] -->
