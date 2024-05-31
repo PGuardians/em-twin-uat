@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 public class LogReader {
     
     static {
-        PropertyConfigurator.configure("C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\Config\\log4j.properties");
+        PropertyConfigurator.configure("/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/Config/log4j.properties");
     }
 
     private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(LogReader.class);

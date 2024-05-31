@@ -36,7 +36,7 @@ public class viewProfile_Runner extends BaseClass{
 		
 		Thread.sleep(2000);
 		
-		String locn = "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\forgetPasskey_Dictonary.txt";
+		String locn = "/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/forgetPasskey_Dictonary.txt";
         FileReader fileReader = new FileReader(locn);
         BufferedReader reade = new BufferedReader(fileReader);
         
@@ -56,7 +56,7 @@ public class viewProfile_Runner extends BaseClass{
 	    BaseClass_Element_Methods.click(pm.up().getSaveChanges());
 	    System.out.println(newPassword);
 	    
-	    String filePath = "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\forgetPasskey_Dictonary.txt"; // Specify the path to your file
+	    String filePath = "/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/forgetPasskey_Dictonary.txt"; // Specify the path to your file
 	    String content = newPassword; // New text to overwrite the file
         try {
             // Read the file content

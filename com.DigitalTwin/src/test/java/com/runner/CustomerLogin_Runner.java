@@ -23,7 +23,7 @@ public class CustomerLogin_Runner extends BaseClass{
     @Test(priority = 1,dependsOnMethods= {"com.runner.CustomerLogin_Runner.setUp"})
 	public void loginCustomer() throws InterruptedException, IOException {
     	Thread.sleep(2000);
-    	String locn = "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\Cust_forgetPasskey.txt";
+    	String locn = "/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/Cust_forgetPasskey.txt";
         FileReader fileReader = new FileReader(locn);
         BufferedReader readr = new BufferedReader(fileReader);
     	

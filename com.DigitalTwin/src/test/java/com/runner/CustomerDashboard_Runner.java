@@ -53,7 +53,7 @@ public class CustomerDashboard_Runner extends BaseClass {
 		Thread.sleep(3000);
 		
 		  String file=
-		  "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\Resources\\batch-1-23x.csv";
+		  "/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/Resources/batch-1-23x.csv";
 		  file = file.replace("\\\\", "\\");
 		  StringSelection stringSelection = new StringSelection(file);
 		  

@@ -1,0 +1,28 @@
+2024-05-31 23:26:28 INFO  LogReader:15 - chrome browser launched
+2024-05-31 23:26:29 INFO  LogReader:15 - url launched
+2024-06-01 00:13:40 INFO  LogReader:15 - chrome browser launched
+2024-06-01 00:13:42 INFO  LogReader:15 - url launched
+2024-06-01 00:16:33 INFO  LogReader:15 - chrome browser launched
+2024-06-01 00:16:34 INFO  LogReader:15 - url launched
+2024-06-01 00:21:50 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-01 01:11:52 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-01 01:13:22 INFO  LogReader:15 - chrome browser launched
+2024-06-01 01:13:23 INFO  LogReader:15 - url launched
+2024-06-01 01:22:08 INFO  LogReader:15 - chrome browser launched
+2024-06-01 01:22:10 INFO  LogReader:15 - url launched
+2024-06-01 01:26:29 INFO  LogReader:15 - chrome browser launched
+2024-06-01 01:26:30 INFO  LogReader:15 - url launched

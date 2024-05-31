@@ -24,7 +24,7 @@ public class Login_Runner extends BaseClass {
     public void loginUser() throws InterruptedException, IOException {
         String username = "dinesh@eminds.ai";
         
-        String locn = "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\forgetPasskey_Dictonary.txt";
+        String locn = "/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/forgetPasskey_Dictonary.txt";
         FileReader fileReader = new FileReader(locn);
         BufferedReader readr = new BufferedReader(fileReader);
         String password = readr.readLine();

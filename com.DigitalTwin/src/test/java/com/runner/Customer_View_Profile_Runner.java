@@ -63,7 +63,7 @@ public class Customer_View_Profile_Runner extends BaseClass{
 	
 			Thread.sleep(2000);
 			
-			String locn1 = "C:\\\\Users\\\\Dell\\\\Downloads\\\\com.DigitalTwin(2)\\\\com.DigitalTwin\\\\Cust_forgetPasskey.txt";
+			String locn1 = "/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/Cust_forgetPasskey.txt";
 		   FileReader fileReader1 = new FileReader(locn1);
 		   BufferedReader reade1 = new BufferedReader(fileReader1);
 		   
@@ -83,7 +83,7 @@ public class Customer_View_Profile_Runner extends BaseClass{
 		   BaseClass_Element_Methods.click(pm.cp().getSaveChanges());
 		   System.out.println(newPassword1);
 		   
-		   String filePath = "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\Cust_forgetPasskey.txt"; // Specify the path to your file
+		   String filePath = "/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/Cust_forgetPasskey.txt"; // Specify the path to your file
 		   String content = newPassword1; // New text to overwrite the file
 		   try {
 		       // Read the file content
