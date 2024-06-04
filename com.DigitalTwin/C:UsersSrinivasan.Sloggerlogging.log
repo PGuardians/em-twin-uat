@@ -26,3 +26,51 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 2024-06-01 01:22:10 INFO  LogReader:15 - url launched
 2024-06-01 01:26:29 INFO  LogReader:15 - chrome browser launched
 2024-06-01 01:26:30 INFO  LogReader:15 - url launched
+2024-06-01 01:55:52 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-01 02:00:05 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-03 11:42:48 INFO  LogReader:15 - chrome browser launched
+2024-06-03 11:42:50 INFO  LogReader:15 - url launched
+2024-06-03 11:45:29 INFO  LogReader:15 - chrome browser launched
+2024-06-03 11:45:30 INFO  LogReader:15 - url launched
+2024-06-03 11:46:50 INFO  LogReader:15 - chrome browser launched
+2024-06-03 11:46:51 INFO  LogReader:15 - url launched
+2024-06-03 11:50:54 INFO  LogReader:15 - chrome browser launched
+2024-06-03 11:50:55 INFO  LogReader:15 - url launched
+2024-06-03 11:53:59 INFO  LogReader:15 - chrome browser launched
+2024-06-03 11:54:00 INFO  LogReader:15 - url launched
+2024-06-03 11:56:56 INFO  LogReader:15 - chrome browser launched
+2024-06-03 11:56:57 INFO  LogReader:15 - url launched
+2024-06-03 12:00:01 INFO  LogReader:15 - chrome browser launched
+2024-06-03 12:00:02 INFO  LogReader:15 - url launched
+2024-06-03 12:03:14 INFO  LogReader:15 - chrome browser launched
+2024-06-03 12:03:15 INFO  LogReader:15 - url launched
+2024-06-04 10:48:27 INFO  LogReader:15 - chrome browser launched
+2024-06-04 10:48:29 INFO  LogReader:15 - url launched
+2024-06-04 10:52:52 INFO  LogReader:15 - chrome browser launched
+2024-06-04 10:52:53 INFO  LogReader:15 - url launched
+2024-06-04 10:55:57 INFO  LogReader:15 - chrome browser launched
+2024-06-04 10:55:58 INFO  LogReader:15 - url launched
+2024-06-04 11:02:49 INFO  LogReader:15 - chrome browser launched
+2024-06-04 11:02:50 INFO  LogReader:15 - url launched
+2024-06-04 12:42:46 INFO  LogReader:15 - chrome browser launched
+2024-06-04 12:42:48 INFO  LogReader:15 - url launched
+2024-06-04 12:44:01 INFO  LogReader:15 - chrome browser launched
+2024-06-04 12:44:03 INFO  LogReader:15 - url launched
+2024-06-04 12:48:15 INFO  LogReader:15 - chrome browser launched
+2024-06-04 12:48:16 INFO  LogReader:15 - url launched
+2024-06-04 12:51:24 INFO  LogReader:15 - chrome browser launched
+2024-06-04 12:51:25 INFO  LogReader:15 - url launched
