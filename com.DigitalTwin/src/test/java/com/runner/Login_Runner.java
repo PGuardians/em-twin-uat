@@ -1,5 +1,4 @@
 package com.runner;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -23,8 +22,10 @@ public class Login_Runner extends BaseClass {
     @Test
     public void loginUser() throws InterruptedException, IOException {
         String username = "dinesh@eminds.ai";
-        
-        String locn = "/home/eminds/auto-test/em-twin-uat/com.DigitalTwin/forgetPasskey_Dictonary.txt";
+
+//        String locn= Env_Reader.getPropertyFromKey("Apass");
+//        System.out.println("location:"+locn);
+        String locn = "forgetPasskey_Dictonary.txt";
         FileReader fileReader = new FileReader(locn);
         BufferedReader readr = new BufferedReader(fileReader);
         String password = readr.readLine();
