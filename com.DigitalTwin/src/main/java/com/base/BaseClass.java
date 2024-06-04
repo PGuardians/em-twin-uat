@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 import com.filereader.ConfigReader;
 import com.filereader.LogReader;
 import com.utils.BaseClass_Driver_Methods;
@@ -26,11 +27,19 @@ public class BaseClass {
         try {
             if (browserName.equalsIgnoreCase("chrome")) {
             	
-                WebDriverManager.chromedriver().setup();
-                
+//                WebDriverManager.chromedriver().setup();
+//                WebDriverManager.chromedriver().driverVersion("125.0.6422.141").setup();
+                System.setProperty(
+                    "webdriver.chrome.driver",
+//                    "/home/eminds/auto-test/chromedriver-linux64/chromedriver");
+//                    "/home/eminds/chromedriver-linux64/chromedriver");
+                     "/usr/bin/chromedriver");
+
                 driver = new ChromeDriver();
                 
                 LogReader.logInfo("chrome browser launched");
+
+
             } else if (browserName.equalsIgnoreCase("Edge")) {
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
