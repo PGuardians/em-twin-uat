@@ -160,12 +160,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(William, John, johnwillamsjw2000@gmail.com, Developer)">createUser(William, John, johnwillamsjw2000@gmail.com, Developer)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)">createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)">createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(William, John, johnwillamsjw2000@gmail.com, Developer)">createUser(William, John, johnwillamsjw2000@gmail.com, Developer)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -246,16 +246,15 @@
                   <a name="uploadDataset">
                   </a> <!-- uploadDataset -->
                   <span class="method-name">uploadDataset</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;file-container&apos;]&quot;}
   (Session info: chrome=125.0.6422.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-97-generic&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [928ee6577368ff3ad2a9a02c0737365e, clickElement {id=f.4F2BBD6756D7045F183404E8499D2825.d.8266E9A3F759293FFECEE1C7266EE01F.e.70}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38073/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (928ee6577368ff3ad2a9a02c0737365e)] -&gt; xpath: //button[@data-testid=&apos;training-data-upload-btn&apos;]]
-Session ID: 928ee6577368ff3ad2a9a02c0737365e
+Command: [a0cb8c0e73dab304686efeffb80c9d0a, findElement {value=//div[@class=&apos;file-container&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35611}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35611/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0cb8c0e73dab304686efeffb80c9d0a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -263,13 +262,16 @@ Session ID: 928ee6577368ff3ad2a9a02c0737365e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
 	at com.utils.BaseClass_Element_Methods.click(BaseClass_Element_Methods.java:14)
-	at com.runner.CustomerDashboard_Runner.uploadDataset(CustomerDashboard_Runner.java:77)
-... Removed 36 stack frames
+	at com.runner.CustomerDashboard_Runner.uploadDataset(CustomerDashboard_Runner.java:27)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -389,18 +391,18 @@ Session ID: 928ee6577368ff3ad2a9a02c0737365e
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createUser(William, John, johnwillamsjw2000@gmail.com, Developer)">
-                  </a> <!-- createUser(William, John, johnwillamsjw2000@gmail.com, Developer) -->
-                  <span class="method-name">createUser</span>
-                  <span class="parameters">(William, John, johnwillamsjw2000@gmail.com, Developer)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)">
                   </a> <!-- createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist) -->
                   <span class="method-name">createUser</span>
                   <span class="parameters">(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser(William, John, johnwillamsjw2000@gmail.com, Developer)">
+                  </a> <!-- createUser(William, John, johnwillamsjw2000@gmail.com, Developer) -->
+                  <span class="method-name">createUser</span>
+                  <span class="parameters">(William, John, johnwillamsjw2000@gmail.com, Developer)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -529,79 +531,79 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(21);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'uploadDataset')
-data.setCell(0, 2, 'com.runner.CustomerDashboard_Runner')
-data.setCell(0, 3, 32098);
+data.setCell(0, 1, 'createUser')
+data.setCell(0, 2, 'com.runner.userList_Runner')
+data.setCell(0, 3, 31415);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createUser')
 data.setCell(1, 2, 'com.runner.userList_Runner')
-data.setCell(1, 3, 31263);
+data.setCell(1, 3, 31221);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'createUser')
 data.setCell(2, 2, 'com.runner.userList_Runner')
-data.setCell(2, 3, 31118);
+data.setCell(2, 3, 31163);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createUser')
+data.setCell(3, 1, 'deleteDeveloper')
 data.setCell(3, 2, 'com.runner.userList_Runner')
-data.setCell(3, 3, 31075);
+data.setCell(3, 3, 15657);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'deleteDeveloper')
+data.setCell(4, 1, 'deleteCustomer')
 data.setCell(4, 2, 'com.runner.userList_Runner')
-data.setCell(4, 3, 15301);
+data.setCell(4, 3, 13323);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'deleteCustomer')
+data.setCell(5, 1, 'deleteDatascientist')
 data.setCell(5, 2, 'com.runner.userList_Runner')
-data.setCell(5, 3, 13051);
+data.setCell(5, 3, 12979);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'deleteDatascientist')
-data.setCell(6, 2, 'com.runner.userList_Runner')
-data.setCell(6, 3, 12609);
+data.setCell(6, 1, 'loginCustomer')
+data.setCell(6, 2, 'com.runner.CustomerLogin_Runner')
+data.setCell(6, 3, 10828);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginCustomer')
-data.setCell(7, 2, 'com.runner.CustomerLogin_Runner')
-data.setCell(7, 3, 11260);
+data.setCell(7, 1, 'searchDeveloper')
+data.setCell(7, 2, 'com.runner.userList_Runner')
+data.setCell(7, 3, 9863);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'setUp')
 data.setCell(8, 2, 'com.runner.CustomerLogin_Runner')
-data.setCell(8, 3, 9760);
+data.setCell(8, 3, 8465);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'searchDeveloper')
+data.setCell(9, 1, 'searchDatascientist')
 data.setCell(9, 2, 'com.runner.userList_Runner')
-data.setCell(9, 3, 9527);
+data.setCell(9, 3, 7639);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'searchCustomer')
 data.setCell(10, 2, 'com.runner.userList_Runner')
-data.setCell(10, 3, 7620);
+data.setCell(10, 3, 7627);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'searchDatascientist')
-data.setCell(11, 2, 'com.runner.userList_Runner')
-data.setCell(11, 3, 7511);
+data.setCell(11, 1, 'loginUser')
+data.setCell(11, 2, 'com.runner.Login_Runner')
+data.setCell(11, 3, 7121);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'loginUser')
-data.setCell(12, 2, 'com.runner.Login_Runner')
-data.setCell(12, 3, 6254);
+data.setCell(12, 1, 'checkLogin')
+data.setCell(12, 2, 'com.runner.viewProfile_Runner')
+data.setCell(12, 3, 5712);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'checkLogin')
+data.setCell(13, 1, 'logOut')
 data.setCell(13, 2, 'com.runner.viewProfile_Runner')
-data.setCell(13, 3, 5557);
+data.setCell(13, 3, 3309);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'logOut')
+data.setCell(14, 1, 'changePassword')
 data.setCell(14, 2, 'com.runner.viewProfile_Runner')
-data.setCell(14, 3, 3240);
+data.setCell(14, 3, 2824);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'changePassword')
+data.setCell(15, 1, 'clickChangePassword')
 data.setCell(15, 2, 'com.runner.viewProfile_Runner')
-data.setCell(15, 3, 2765);
+data.setCell(15, 3, 2074);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'clickChangePassword')
-data.setCell(16, 2, 'com.runner.viewProfile_Runner')
-data.setCell(16, 3, 2064);
+data.setCell(16, 1, 'uploadDataset')
+data.setCell(16, 2, 'com.runner.CustomerDashboard_Runner')
+data.setCell(16, 3, 92);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'clickChangeCustomerPassword')
+data.setCell(17, 1, 'checkCustomerLogin')
 data.setCell(17, 2, 'com.runner.Customer_View_Profile_Runner')
-data.setCell(17, 3, 1);
+data.setCell(17, 3, 0);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'changeCustomerPassword')
+data.setCell(18, 1, 'clickChangeCustomerPassword')
 data.setCell(18, 2, 'com.runner.Customer_View_Profile_Runner')
 data.setCell(18, 3, 0);
 data.setCell(19, 0, 19)
@@ -609,7 +611,7 @@ data.setCell(19, 1, 'logOut')
 data.setCell(19, 2, 'com.runner.Customer_View_Profile_Runner')
 data.setCell(19, 3, 0);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'checkCustomerLogin')
+data.setCell(20, 1, 'changeCustomerPassword')
 data.setCell(20, 2, 'com.runner.Customer_View_Profile_Runner')
 data.setCell(20, 3, 0);
 window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
@@ -649,76 +651,76 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginUser</span>
-                <span class="method-start">10628 ms</span>
+                <span class="method-start">8014 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.userList_Runner</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createUser(Srinivasan, Sud, sivasri691995@gmail.com, Customer)</span>
-                <span class="method-start">16885 ms</span>
+                <span class="method-start">15142 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</span>
-                <span class="method-start">48148 ms</span>
+                <span class="method-start">46558 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createUser(William, John, johnwillamsjw2000@gmail.com, Developer)</span>
-                <span class="method-start">79224 ms</span>
+                <span class="method-start">77779 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchCustomer</span>
-                <span class="method-start">110343 ms</span>
+                <span class="method-start">108943 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchDatascientist</span>
-                <span class="method-start">117964 ms</span>
+                <span class="method-start">116571 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchDeveloper</span>
-                <span class="method-start">125475 ms</span>
+                <span class="method-start">124210 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteCustomer</span>
-                <span class="method-start">135003 ms</span>
+                <span class="method-start">134074 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteDatascientist</span>
-                <span class="method-start">148055 ms</span>
+                <span class="method-start">147398 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteDeveloper</span>
-                <span class="method-start">160664 ms</span>
+                <span class="method-start">160377 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.viewProfile_Runner</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">clickChangePassword</span>
-                <span class="method-start">175968 ms</span>
+                <span class="method-start">176038 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">changePassword</span>
-                <span class="method-start">178033 ms</span>
+                <span class="method-start">178113 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkLogin</span>
-                <span class="method-start">180799 ms</span>
+                <span class="method-start">180938 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logOut</span>
-                <span class="method-start">186357 ms</span>
+                <span class="method-start">186652 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.CustomerLogin_Runner</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">setUp</span>
-                <span class="method-start">189598 ms</span>
+                <span class="method-start">189963 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginCustomer</span>
-                <span class="method-start">199359 ms</span>
+                <span class="method-start">198428 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -727,7 +729,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">uploadDataset</span>
-                <span class="method-start">210619 ms</span>
+                <span class="method-start">209257 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

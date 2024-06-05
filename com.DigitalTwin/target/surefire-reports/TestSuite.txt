@@ -1,18 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 243.716 s <<< FAILURE! - in TestSuite
-uploadDataset(com.runner.CustomerDashboard_Runner)  Time elapsed: 32.111 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+Tests run: 21, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 210.749 s <<< FAILURE! - in TestSuite
+uploadDataset(com.runner.CustomerDashboard_Runner)  Time elapsed: 0.106 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='file-container']"}
   (Session info: chrome=125.0.6422.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [928ee6577368ff3ad2a9a02c0737365e, clickElement {id=f.4F2BBD6756D7045F183404E8499D2825.d.8266E9A3F759293FFECEE1C7266EE01F.e.70}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38073/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (928ee6577368ff3ad2a9a02c0737365e)] -> xpath: //button[@data-testid='training-data-upload-btn']]
-Session ID: 928ee6577368ff3ad2a9a02c0737365e
-	at com.runner.CustomerDashboard_Runner.uploadDataset(CustomerDashboard_Runner.java:77)
+Command: [a0cb8c0e73dab304686efeffb80c9d0a, findElement {value=//div[@class='file-container'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35611}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35611/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0cb8c0e73dab304686efeffb80c9d0a
+	at com.runner.CustomerDashboard_Runner.uploadDataset(CustomerDashboard_Runner.java:27)
 

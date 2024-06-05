@@ -2,30 +2,30 @@
 <testng-results total="21" passed="16" failed="1" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-04T07:18:06Z" name="MyTestSuite" finished-at="2024-06-04T07:22:08Z" duration-ms="242741">
+  <suite started-at="2024-06-05T07:18:44Z" name="MyTestSuite" finished-at="2024-06-05T07:22:13Z" duration-ms="209376">
     <groups>
     </groups>
-    <test started-at="2024-06-04T07:18:06Z" name="MyTest" finished-at="2024-06-04T07:22:08Z" duration-ms="242741">
+    <test started-at="2024-06-05T07:18:44Z" name="MyTest" finished-at="2024-06-05T07:22:13Z" duration-ms="209376">
       <class name="com.runner.viewProfile_Runner">
-        <test-method signature="clickChangePassword()[pri:0, instance:com.runner.viewProfile_Runner@43dac38f]" started-at="2024-06-04T12:51:02Z" name="clickChangePassword" finished-at="2024-06-04T12:51:04Z" depends-on-methods="com.runner.userList_Runner.deleteDeveloper" duration-ms="2064" status="PASS">
+        <test-method signature="clickChangePassword()[pri:0, instance:com.runner.viewProfile_Runner@43dac38f]" started-at="2024-06-05T12:51:40Z" name="clickChangePassword" finished-at="2024-06-05T12:51:42Z" depends-on-methods="com.runner.userList_Runner.deleteDeveloper" duration-ms="2074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickChangePassword -->
-        <test-method signature="changePassword()[pri:1, instance:com.runner.viewProfile_Runner@43dac38f]" started-at="2024-06-04T12:51:04Z" name="changePassword" finished-at="2024-06-04T12:51:06Z" depends-on-methods="com.runner.viewProfile_Runner.clickChangePassword" duration-ms="2765" status="PASS">
+        <test-method signature="changePassword()[pri:1, instance:com.runner.viewProfile_Runner@43dac38f]" started-at="2024-06-05T12:51:42Z" name="changePassword" finished-at="2024-06-05T12:51:44Z" depends-on-methods="com.runner.viewProfile_Runner.clickChangePassword" duration-ms="2824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePassword -->
-        <test-method signature="checkLogin()[pri:2, instance:com.runner.viewProfile_Runner@43dac38f]" started-at="2024-06-04T12:51:06Z" name="checkLogin" finished-at="2024-06-04T12:51:12Z" depends-on-methods="com.runner.viewProfile_Runner.changePassword" duration-ms="5557" status="PASS">
+        <test-method signature="checkLogin()[pri:2, instance:com.runner.viewProfile_Runner@43dac38f]" started-at="2024-06-05T12:51:44Z" name="checkLogin" finished-at="2024-06-05T12:51:50Z" depends-on-methods="com.runner.viewProfile_Runner.changePassword" duration-ms="5712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogin -->
-        <test-method signature="logOut()[pri:3, instance:com.runner.viewProfile_Runner@43dac38f]" started-at="2024-06-04T12:51:12Z" name="logOut" finished-at="2024-06-04T12:51:15Z" depends-on-methods="com.runner.viewProfile_Runner.checkLogin" duration-ms="3240" status="PASS">
+        <test-method signature="logOut()[pri:3, instance:com.runner.viewProfile_Runner@43dac38f]" started-at="2024-06-05T12:51:50Z" name="logOut" finished-at="2024-06-05T12:51:53Z" depends-on-methods="com.runner.viewProfile_Runner.checkLogin" duration-ms="3309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
       </class> <!-- com.runner.viewProfile_Runner -->
       <class name="com.runner.userList_Runner">
-        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:48:23Z" name="createUser" data-provider="userData" finished-at="2024-06-04T12:48:54Z" duration-ms="31263" status="PASS">
+        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:48:59Z" name="createUser" data-provider="userData" finished-at="2024-06-05T12:49:30Z" duration-ms="31415" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:48:54Z" name="createUser" data-provider="userData" finished-at="2024-06-04T12:49:25Z" duration-ms="31075" status="PASS">
+        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:49:30Z" name="createUser" data-provider="userData" finished-at="2024-06-05T12:50:01Z" duration-ms="31221" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:49:25Z" name="createUser" data-provider="userData" finished-at="2024-06-04T12:49:56Z" duration-ms="31118" status="PASS">
+        <test-method signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:50:01Z" name="createUser" data-provider="userData" finished-at="2024-06-05T12:50:32Z" duration-ms="31163" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -103,33 +103,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method signature="searchCustomer()[pri:1, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:49:56Z" name="searchCustomer" finished-at="2024-06-04T12:50:04Z" duration-ms="7620" status="PASS">
+        <test-method signature="searchCustomer()[pri:1, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:50:32Z" name="searchCustomer" finished-at="2024-06-05T12:50:40Z" duration-ms="7627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchCustomer -->
-        <test-method signature="searchDatascientist()[pri:2, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:50:04Z" name="searchDatascientist" finished-at="2024-06-04T12:50:11Z" duration-ms="7511" status="PASS">
+        <test-method signature="searchDatascientist()[pri:2, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:50:40Z" name="searchDatascientist" finished-at="2024-06-05T12:50:48Z" duration-ms="7639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchDatascientist -->
-        <test-method signature="searchDeveloper()[pri:3, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:50:11Z" name="searchDeveloper" finished-at="2024-06-04T12:50:21Z" duration-ms="9527" status="PASS">
+        <test-method signature="searchDeveloper()[pri:3, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:50:48Z" name="searchDeveloper" finished-at="2024-06-05T12:50:58Z" duration-ms="9863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchDeveloper -->
-        <test-method signature="deleteCustomer()[pri:4, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:50:21Z" name="deleteCustomer" finished-at="2024-06-04T12:50:34Z" duration-ms="13051" status="PASS">
+        <test-method signature="deleteCustomer()[pri:4, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:50:58Z" name="deleteCustomer" finished-at="2024-06-05T12:51:11Z" duration-ms="13323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCustomer -->
-        <test-method signature="deleteDatascientist()[pri:5, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:50:34Z" name="deleteDatascientist" finished-at="2024-06-04T12:50:46Z" duration-ms="12609" status="PASS">
+        <test-method signature="deleteDatascientist()[pri:5, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:51:11Z" name="deleteDatascientist" finished-at="2024-06-05T12:51:24Z" duration-ms="12979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteDatascientist -->
-        <test-method signature="deleteDeveloper()[pri:6, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-04T12:50:46Z" name="deleteDeveloper" finished-at="2024-06-04T12:51:02Z" duration-ms="15301" status="PASS">
+        <test-method signature="deleteDeveloper()[pri:6, instance:com.runner.userList_Runner@d5b810e]" started-at="2024-06-05T12:51:24Z" name="deleteDeveloper" finished-at="2024-06-05T12:51:40Z" duration-ms="15657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteDeveloper -->
       </class> <!-- com.runner.userList_Runner -->
       <class name="com.runner.Customer_View_Profile_Runner">
-        <test-method signature="clickChangeCustomerPassword()[pri:0, instance:com.runner.Customer_View_Profile_Runner@5a56cdac]" started-at="2024-06-04T12:52:08Z" name="clickChangeCustomerPassword" finished-at="2024-06-04T12:52:08Z" depends-on-methods="com.runner.CustomerDashboard_Runner.uploadDataset" duration-ms="1" status="SKIP">
+        <test-method signature="clickChangeCustomerPassword()[pri:0, instance:com.runner.Customer_View_Profile_Runner@5a56cdac]" started-at="2024-06-05T12:52:13Z" name="clickChangeCustomerPassword" finished-at="2024-06-05T12:52:13Z" depends-on-methods="com.runner.CustomerDashboard_Runner.uploadDataset" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method Customer_View_Profile_Runner.clickChangeCustomerPassword()[pri:0, instance:com.runner.Customer_View_Profile_Runner@5a56cdac] depends on not successfully finished methods]]>
@@ -163,41 +163,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickChangeCustomerPassword -->
-        <test-method signature="checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@5a56cdac]" started-at="2024-06-04T12:52:08Z" name="checkCustomerLogin" finished-at="2024-06-04T12:52:08Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.changeCustomerPassword" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Customer_View_Profile_Runner.checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@5a56cdac] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Customer_View_Profile_Runner.checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@5a56cdac] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCustomerLogin -->
-        <test-method signature="changeCustomerPassword()[pri:1, instance:com.runner.Customer_View_Profile_Runner@5a56cdac]" started-at="2024-06-04T12:52:08Z" name="changeCustomerPassword" finished-at="2024-06-04T12:52:08Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.clickChangeCustomerPassword" duration-ms="0" status="SKIP">
+        <test-method signature="changeCustomerPassword()[pri:1, instance:com.runner.Customer_View_Profile_Runner@5a56cdac]" started-at="2024-06-05T12:52:13Z" name="changeCustomerPassword" finished-at="2024-06-05T12:52:13Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.clickChangeCustomerPassword" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method Customer_View_Profile_Runner.changeCustomerPassword()[pri:1, instance:com.runner.Customer_View_Profile_Runner@5a56cdac] depends on not successfully finished methods]]>
@@ -231,7 +197,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeCustomerPassword -->
-        <test-method signature="logOut()[pri:3, instance:com.runner.Customer_View_Profile_Runner@5a56cdac]" started-at="2024-06-04T12:52:08Z" name="logOut" finished-at="2024-06-04T12:52:08Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.checkCustomerLogin" duration-ms="0" status="SKIP">
+        <test-method signature="checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@5a56cdac]" started-at="2024-06-05T12:52:13Z" name="checkCustomerLogin" finished-at="2024-06-05T12:52:13Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.changeCustomerPassword" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Customer_View_Profile_Runner.checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@5a56cdac] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Customer_View_Profile_Runner.checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@5a56cdac] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCustomerLogin -->
+        <test-method signature="logOut()[pri:3, instance:com.runner.Customer_View_Profile_Runner@5a56cdac]" started-at="2024-06-05T12:52:13Z" name="logOut" finished-at="2024-06-05T12:52:13Z" depends-on-methods="com.runner.Customer_View_Profile_Runner.checkCustomerLogin" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method Customer_View_Profile_Runner.logOut()[pri:3, instance:com.runner.Customer_View_Profile_Runner@5a56cdac] depends on not successfully finished methods]]>
@@ -267,51 +267,49 @@
         </test-method> <!-- logOut -->
       </class> <!-- com.runner.Customer_View_Profile_Runner -->
       <class name="com.runner.CustomerLogin_Runner">
-        <test-method signature="setUp()[pri:0, instance:com.runner.CustomerLogin_Runner@485966cc]" started-at="2024-06-04T12:51:15Z" name="setUp" finished-at="2024-06-04T12:51:25Z" depends-on-methods="com.runner.viewProfile_Runner.logOut" duration-ms="9760" status="PASS">
+        <test-method signature="setUp()[pri:0, instance:com.runner.CustomerLogin_Runner@485966cc]" started-at="2024-06-05T12:51:53Z" name="setUp" finished-at="2024-06-05T12:52:02Z" depends-on-methods="com.runner.viewProfile_Runner.logOut" duration-ms="8465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginCustomer()[pri:1, instance:com.runner.CustomerLogin_Runner@485966cc]" started-at="2024-06-04T12:51:25Z" name="loginCustomer" finished-at="2024-06-04T12:51:36Z" depends-on-methods="com.runner.CustomerLogin_Runner.setUp" duration-ms="11260" status="PASS">
+        <test-method signature="loginCustomer()[pri:1, instance:com.runner.CustomerLogin_Runner@485966cc]" started-at="2024-06-05T12:52:02Z" name="loginCustomer" finished-at="2024-06-05T12:52:13Z" depends-on-methods="com.runner.CustomerLogin_Runner.setUp" duration-ms="10828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCustomer -->
       </class> <!-- com.runner.CustomerLogin_Runner -->
       <class name="com.runner.Login_Runner">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.runner.Login_Runner@2ed2d9cb]" started-at="2024-06-04T12:48:06Z" name="setUp" finished-at="2024-06-04T12:48:16Z" duration-ms="10628" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.runner.Login_Runner@2ed2d9cb]" started-at="2024-06-05T12:48:44Z" name="setUp" finished-at="2024-06-05T12:48:52Z" duration-ms="8014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginUser()[pri:0, instance:com.runner.Login_Runner@2ed2d9cb]" started-at="2024-06-04T12:48:16Z" name="loginUser" finished-at="2024-06-04T12:48:23Z" duration-ms="6254" status="PASS">
+        <test-method signature="loginUser()[pri:0, instance:com.runner.Login_Runner@2ed2d9cb]" started-at="2024-06-05T12:48:52Z" name="loginUser" finished-at="2024-06-05T12:48:59Z" duration-ms="7121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUser -->
       </class> <!-- com.runner.Login_Runner -->
       <class name="com.runner.CustomerDashboard_Runner">
-        <test-method signature="uploadDataset()[pri:0, instance:com.runner.CustomerDashboard_Runner@54bff557]" started-at="2024-06-04T12:51:36Z" name="uploadDataset" finished-at="2024-06-04T12:52:08Z" depends-on-methods="com.runner.CustomerLogin_Runner.loginCustomer" duration-ms="32098" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="uploadDataset()[pri:0, instance:com.runner.CustomerDashboard_Runner@54bff557]" started-at="2024-06-05T12:52:13Z" name="uploadDataset" finished-at="2024-06-05T12:52:13Z" depends-on-methods="com.runner.CustomerLogin_Runner.loginCustomer" duration-ms="92" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='file-container']"}
   (Session info: chrome=125.0.6422.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [928ee6577368ff3ad2a9a02c0737365e, clickElement {id=f.4F2BBD6756D7045F183404E8499D2825.d.8266E9A3F759293FFECEE1C7266EE01F.e.70}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38073/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (928ee6577368ff3ad2a9a02c0737365e)] -> xpath: //button[@data-testid='training-data-upload-btn']]
-Session ID: 928ee6577368ff3ad2a9a02c0737365e]]>
+Command: [a0cb8c0e73dab304686efeffb80c9d0a, findElement {value=//div[@class='file-container'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35611}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35611/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0cb8c0e73dab304686efeffb80c9d0a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='file-container']"}
   (Session info: chrome=125.0.6422.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [928ee6577368ff3ad2a9a02c0737365e, clickElement {id=f.4F2BBD6756D7045F183404E8499D2825.d.8266E9A3F759293FFECEE1C7266EE01F.e.70}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38073}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38073/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (928ee6577368ff3ad2a9a02c0737365e)] -> xpath: //button[@data-testid='training-data-upload-btn']]
-Session ID: 928ee6577368ff3ad2a9a02c0737365e
+Command: [a0cb8c0e73dab304686efeffb80c9d0a, findElement {value=//div[@class='file-container'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35611}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35611/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0cb8c0e73dab304686efeffb80c9d0a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -324,15 +322,15 @@ Session ID: 928ee6577368ff3ad2a9a02c0737365e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
 	at com.utils.BaseClass_Element_Methods.click(BaseClass_Element_Methods.java:14)
-	at com.runner.CustomerDashboard_Runner.uploadDataset(CustomerDashboard_Runner.java:77)
+	at com.runner.CustomerDashboard_Runner.uploadDataset(CustomerDashboard_Runner.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -363,7 +361,7 @@ Session ID: 928ee6577368ff3ad2a9a02c0737365e
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadDataset -->

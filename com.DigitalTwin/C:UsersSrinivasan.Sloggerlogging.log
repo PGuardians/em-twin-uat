@@ -74,3 +74,113 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 2024-06-04 12:48:16 INFO  LogReader:15 - url launched
 2024-06-04 12:51:24 INFO  LogReader:15 - chrome browser launched
 2024-06-04 12:51:25 INFO  LogReader:15 - url launched
+2024-06-04 12:55:51 INFO  LogReader:15 - chrome browser launched
+2024-06-04 12:55:53 INFO  LogReader:15 - url launched
+2024-06-04 16:29:58 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 126
+Current browser version is 125.0.6422.141 with binary path /opt/google/chrome/chrome 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 16:37:11 INFO  LogReader:15 - chrome browser launched
+2024-06-04 16:37:12 INFO  LogReader:15 - url launched
+2024-06-04 16:49:14 INFO  LogReader:15 - chrome browser launched
+2024-06-04 16:49:15 INFO  LogReader:15 - url launched
+2024-06-04 16:59:41 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 126
+Current browser version is 125.0.6422.141 with binary path /opt/google/chrome/chrome 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 17:01:34 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 126
+Current browser version is 125.0.6422.141 with binary path /opt/google/chrome/chrome 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 17:13:17 INFO  LogReader:15 - chrome browser launched
+2024-06-04 17:13:17 ERROR LogReader:19 - Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "com.base.BaseClass.driver" is null
+2024-06-04 17:14:59 INFO  LogReader:15 - chrome browser launched
+2024-06-04 17:14:59 ERROR LogReader:19 - Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "com.base.BaseClass.driver" is null
+2024-06-04 17:15:20 INFO  LogReader:15 - chrome browser launched
+2024-06-04 17:15:20 ERROR LogReader:19 - Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "com.base.BaseClass.driver" is null
+2024-06-04 17:23:19 INFO  LogReader:15 - chrome browser launched
+2024-06-04 17:23:19 ERROR LogReader:19 - Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "com.base.BaseClass.driver" is null
+2024-06-04 17:24:32 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 17:27:15 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 17:28:42 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 17:40:15 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 17:42:38 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 18:47:21 INFO  LogReader:15 - chrome browser launched
+2024-06-04 18:47:22 INFO  LogReader:15 - url launched
+2024-06-04 18:48:12 INFO  LogReader:15 - chrome browser launched
+2024-06-04 18:48:38 INFO  LogReader:15 - chrome browser launched
+2024-06-04 18:48:39 INFO  LogReader:15 - url launched
+2024-06-04 18:49:38 INFO  LogReader:15 - chrome browser launched
+2024-06-04 18:49:39 INFO  LogReader:15 - url launched
+2024-06-04 18:53:08 ERROR LogReader:19 - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 18:53:47 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 126
+Current browser version is 125.0.6422.141 with binary path /opt/google/chrome/chrome 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-04 18:55:15 INFO  LogReader:15 - chrome browser launched
+2024-06-04 18:55:17 INFO  LogReader:15 - url launched
+2024-06-05 12:39:08 ERROR LogReader:19 - Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 115
+Current browser version is 125.0.6422.141 with binary path /usr/bin/google-chrome 
+Host info: host: 'twinwork2', ip: '127.0.1.1'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-97-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+2024-06-05 12:41:02 INFO  LogReader:15 - chrome browser launched
+2024-06-05 12:41:03 INFO  LogReader:15 - url launched
+2024-06-05 12:48:50 INFO  LogReader:15 - chrome browser launched
+2024-06-05 12:48:52 INFO  LogReader:15 - url launched
+2024-06-05 12:52:01 INFO  LogReader:15 - chrome browser launched
+2024-06-05 12:52:02 INFO  LogReader:15 - url launched
