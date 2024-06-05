@@ -1,6 +1,13 @@
 package com.runner;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -17,7 +24,7 @@ public class userList_Runner extends BaseClass {
     public Object[][] getUserData() {
     	
         Object[][] data = new Object[][]{
-                {"Srinivasan", "Sud", "sivasri691995@gmail.com", "Customer"},
+                {"Srinivasan", "Sud", "twinarcdemo@gmail.com", "Customer"},
                 {"James", "Smith", "smithjamesjs7189@gmail.com", "Data Scientist"},
                 {"William", "John", "johnwillamsjw2000@gmail.com", "Developer"}
         };
@@ -53,20 +60,25 @@ public class userList_Runner extends BaseClass {
         Thread.sleep(10000);
     }
     
-    
     @Test(priority = 1)
     public void searchCustomer() throws InterruptedException {
-    	
+    	Actions action = new Actions(driver);
+    	BaseClass_Driver_Methods.navigateBack(driver);
     	Thread.sleep(5000);
     	BaseClass_Element_Methods.sendKeys(pm.ul().getSearchBox(),"Srinivasan");
     	Thread.sleep(1000);
     	
     	String customerEmail=BaseClass_Element_Methods.getText(pm.ul().getCustomerMail());
     	String customerStatus=BaseClass_Element_Methods.getText(pm.ul().getCustomerStatus());
-        Assert.assertEquals(customerEmail,"sivasri691995@gmail.com"); 
+        Assert.assertEquals(customerEmail,"twinarcdemo@gmail.com"); 
         Assert.assertEquals(customerStatus, "Inactive");
+        Thread.sleep(5000);
+        WebElement srchwait = driver.findElement(By.xpath("//input[@data-testid= 'userlist-search-input']"));
+        srchwait.sendKeys(Keys.CONTROL);
+        srchwait.sendKeys("A");
+        srchwait.sendKeys(Keys.BACK_SPACE);
+//        BaseClass_Driver_Methods.navigateBack(driver);
         Thread.sleep(1000);
-        BaseClass_Driver_Methods.navigateBack(driver);  	
 	}
     
     @Test(priority = 2)
@@ -83,7 +95,7 @@ public class userList_Runner extends BaseClass {
         Assert.assertEquals(datascientStatus, "Active");
         Assert.assertEquals(datascientistEmail, "smithjamesjs7189@gmail.com");
         Thread.sleep(1000);
-        BaseClass_Driver_Methods.navigateBack(driver);
+        BaseClass_Driver_Methods.navigateBack(driver);	
 	}  
     
     @Test(priority = 3)
@@ -98,14 +110,13 @@ public class userList_Runner extends BaseClass {
     	Assert.assertEquals(developerStatus, "Active");
     	Assert.assertEquals(developerEmail, "johnwillamsjw2000@gmail.com");	
     	Thread.sleep(1000);
-    	BaseClass_Driver_Methods.navigateBack(driver);
-    	Thread.sleep(2000);
+        BaseClass_Driver_Methods.navigateBack(driver);
 	}
     
     @Test(priority = 4)//dlt customer
     public void deleteCustomer() throws InterruptedException {
     	Thread.sleep(5000);
-    	BaseClass_Element_Methods.sendKeys(pm.ul().getSearchBox(),"sivasri691995@gmail.com");
+    	BaseClass_Element_Methods.sendKeys(pm.ul().getSearchBox(),"twinarcdemo@gmail.com");
     	Thread.sleep(1000);
     	
     	BaseClass_Element_Methods.click(pm.ul().getDeleteCustomer());

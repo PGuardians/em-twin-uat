@@ -75,7 +75,7 @@ public class Customer_View_Profile_Runner extends BaseClass{
 		   Random random = new Random();
 		
 		   // Generate an 8-digit random number
-		   int randomNumber = random.nextInt(9) + 1;
+		   int randomNumber = random.nextInt(9999) + 1;
 		
 		   // Convert the random number to a string
 		      newPassword1 = String.valueOf("PoEminds@"+randomNumber);
@@ -104,12 +104,14 @@ public class Customer_View_Profile_Runner extends BaseClass{
 
 	
 	@Test(priority = 2,dependsOnMethods = {"com.runner.Customer_View_Profile_Runner.changeCustomerPassword"})
-	public void checkCustomerLogin() throws InterruptedException {
-	
-		   String username = "eminds.edge@gmail.com"; //srinivasansudharsanan95@gmail.com";
+	public void checkCustomerLogin() throws InterruptedException, IOException {
+			
+		   String customerId= Env_Reader.getPropertyFromKey("Customer");
+	       System.out.println("customerId: "+customerId);
+		   //String username = "eminds.edge@gmail.com"; //"srinivasansudharsanan95@gmail.com";  
 	       String password = newPassword1;
 	       Thread.sleep(5000);
-	       BaseClass_Element_Methods.sendKeys(pm.lp().getUserName(), username);
+	       BaseClass_Element_Methods.sendKeys(pm.lp().getUserName(), customerId);
 	       BaseClass_Element_Methods.sendKeys(pm.lp().getPassWord(), password);
 	       BaseClass_Element_Methods.click(pm.lp().getSubmit());
 	

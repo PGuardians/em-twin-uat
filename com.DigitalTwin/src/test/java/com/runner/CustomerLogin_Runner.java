@@ -25,7 +25,9 @@ public class CustomerLogin_Runner extends BaseClass{
 	public void loginCustomer() throws InterruptedException, IOException {
     	Thread.sleep(2000);
     	
-        String username = "eminds.edge@gmail.com";  //"srinivasansudharsanan95@gmail.com";
+    	String customerId= Env_Reader.getPropertyFromKey("Customer");
+        System.out.println("customerId: "+customerId);
+//        String username = //"eminds.edge@gmail.com"; "srinivasansudharsanan95@gmail.com";  
         
         String locn1= Env_Reader.getPropertyFromKey("Cpass");
         System.out.println("location:"+locn1);
@@ -35,7 +37,7 @@ public class CustomerLogin_Runner extends BaseClass{
         
         String password = readr.readLine();
         Thread.sleep(5000);
-        BaseClass_Element_Methods.sendKeys(pm.cl().getCustomerUsername(), username);
+        BaseClass_Element_Methods.sendKeys(pm.cl().getCustomerUsername(), customerId);
         BaseClass_Element_Methods.sendKeys(pm.cl().getCustomerPassword(), password);
         BaseClass_Element_Methods.click(pm.cl().getLogin());
         Thread.sleep(2000);

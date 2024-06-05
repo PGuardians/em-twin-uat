@@ -48,7 +48,7 @@ public class viewProfile_Runner extends BaseClass{
 	    Random random = new Random();
 
 	    // Generate an 8-digit random number
-	    int randomNumber = random.nextInt(99) + 1;
+	    int randomNumber = random.nextInt(9999) + 1;
 
 	    // Convert the random number to a string
 	       newPassword = String.valueOf("Eminds@"+randomNumber);

@@ -14,7 +14,7 @@ public class ConfigReader {
 		
 	try {
 		
-		 propertyFile=new FileInputStream("C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\Config\\config.properties");
+		 propertyFile=new FileInputStream("C:\\Users\\Dell\\Downloads\\com.DigitalTwin_Local\\em-twin-uat\\com.DigitalTwin\\Config\\config.properties");
 	}
 	catch (FileNotFoundException e) {
 		System.out.println("Unable to locate config.properties file.");

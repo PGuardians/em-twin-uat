@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.base.BaseClass;
@@ -12,7 +13,8 @@ import com.filereader.Env_Reader;
 import com.filereader.LogReader;
 import com.pom_manager.Pom_Manager;
 import com.utils.BaseClass_Element_Methods;
-
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import io.opentelemetry.api.logs.Logger;
 
 public class Login_Runner extends BaseClass {
@@ -24,11 +26,15 @@ public class Login_Runner extends BaseClass {
     public void setUp() throws IOException {
         initializeDriver();
         pm = new Pom_Manager(driver); // Initialize Pom_Manager
+        
+        
     }
 
     @Test
     public void loginUser() throws InterruptedException, IOException {
-        String username = "dinesh@eminds.ai";
+        //String username = "dinesh@eminds.ai";
+    	String username = Env_Reader.getPropertyFromKey("Admin");
+    	System.out.println("Admin: "+username);
         
        String locn= Env_Reader.getPropertyFromKey("Apass");
        System.out.println("location:"+locn);
