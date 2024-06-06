@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class Env_Reader {
 	
-	static String InputStreams = "Config\\env.properties";
+	static String InputStreams = "Config/env.properties";
 	
 // Admin login - env
 public static String getPropertyFromKey(String key) throws IOException {
