@@ -40,7 +40,7 @@ public class User_List {
 	@FindBy(xpath = "//td[text()='WILLIAM']")
 	private  WebElement developerUser;
 	
-	@FindBy(xpath = "//td[text()='sivasri691995@gmail.com']")
+	@FindBy(xpath = "//td[text()='twinarcdemo@gmail.com']")
 	private WebElement customerMail;
 	
 	@FindBy(xpath="//td[text()='smithjamesjs7189@gmail.com']")
@@ -52,7 +52,7 @@ public class User_List {
 	@FindBy(xpath="//td[text()='smithjamesjs7189@gmail.com']/following-sibling::td/following-sibling::td[text()='Active']")
 	private WebElement datascientistStatus;
 	
-	@FindBy(xpath="//td[text()='sivasri691995@gmail.com']/following-sibling::td/following-sibling::td[text()='Inactive']")
+	@FindBy(xpath="//td[text()='twinarcdemo@gmail.com']/following-sibling::td/following-sibling::td[text()='Inactive']")
 	private WebElement customerStatus;
 	
 	@FindBy(xpath="//td[text()='johnwillamsjw2000@gmail.com']/following-sibling::td/following-sibling::td[text()='Active']")

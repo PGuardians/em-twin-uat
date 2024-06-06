@@ -40,6 +40,7 @@ public class CustomerLogin_Runner extends BaseClass{
         BaseClass_Element_Methods.sendKeys(pm.cl().getCustomerUsername(), customerId);
         BaseClass_Element_Methods.sendKeys(pm.cl().getCustomerPassword(), password);
         BaseClass_Element_Methods.click(pm.cl().getLogin());
+        System.out.println("Customer login success");
         Thread.sleep(2000);
     }    
 

@@ -34,19 +34,14 @@ public class Customer_View_Profile_Runner extends BaseClass{
 		 Thread.sleep(5000);
 //		 driver.findElement(By.xpath("//input[@data-testid='updatepassword-current-password']")).click();
 		 BaseClass_Element_Methods.click(pm.cp().getClickProfile()); 
+		 System.out.println("Customer profile clicked");
 		 Thread.sleep(1000);
 		 BaseClass_Element_Methods.click(pm.cp().getViewProfile());
+		 System.out.println("Customer view profile clicked");
 		 Thread.sleep(1000);
 		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("S");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
 		 Thread.sleep(2000);
-//		 Robot robot = new Robot();
-//		 robot.keyPress(KeyEvent.CTRL_MASK);
-//		 robot.keyPress(KeyEvent.VK_A);
-//		 robot.keyRelease(KeyEvent.VK_A);
-//		 robot.keyRelease(KeyEvent.CTRL_MASK);
-//		 robot.keyPress(KeyEvent.VK_BACK_SPACE);
-//		 robot.keyRelease(KeyEvent.VK_BACK_SPACE);
 		 
 		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).clear();
 		 Thread.sleep(2000);
@@ -64,18 +59,19 @@ public class Customer_View_Profile_Runner extends BaseClass{
 	
 			Thread.sleep(2000);
 			
-			 String locn1= Env_Reader.getPropertyFromKey("Cpass");
+		   String locn1= Env_Reader.getPropertyFromKey("Cpass");
 		   //String locn1 = "C:\\\\Users\\\\Dell\\\\Downloads\\\\com.DigitalTwin(2)\\\\com.DigitalTwin\\\\Cust_forgetPasskey.txt";
 		   FileReader fileReader1 = new FileReader(locn1);
 		   BufferedReader reade1 = new BufferedReader(fileReader1);
 		   
 		   BaseClass_Element_Methods.sendKeys(pm.cp().getCurrentPassword(), reade1.readLine());
 		
-//		   // Create an instance of Random class
+		   // Create an instance of Random class
 		   Random random = new Random();
 		
 		   // Generate an 8-digit random number
 		   int randomNumber = random.nextInt(9999) + 1;
+		   
 		
 		   // Convert the random number to a string
 		      newPassword1 = String.valueOf("PoEminds@"+randomNumber);

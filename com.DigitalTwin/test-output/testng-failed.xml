@@ -31,8 +31,12 @@
       </class> <!-- com.runner.Customer_View_Profile_Runner -->
       <class name="com.runner.userList_Runner">
         <methods>
+          <include name="searchDeveloper"/>
+          <include name="deleteDatascientist"/>
           <include name="deleteDeveloper"/>
-          <include name="createUser" invocation-numbers="1 2"/>
+          <include name="searchDatascientist"/>
+          <include name="createUser" invocation-numbers="0 1 2"/>
+          <include name="deleteCustomer"/>
           <include name="searchCustomer"/>
         </methods>
       </class> <!-- com.runner.userList_Runner -->
@@ -50,6 +54,7 @@
       <class name="com.runner.Login_Runner">
         <methods>
           <include name="setUp"/>
+          <include name="loginUser"/>
         </methods>
       </class> <!-- com.runner.Login_Runner -->
     </classes>

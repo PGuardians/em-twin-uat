@@ -53,6 +53,7 @@ public class userList_Runner extends BaseClass {
         }
         
         BaseClass_Element_Methods.click(pm.ul().getCreate());
+        System.out.println("----- Customer, Data engineer, Developer as a user created succesfully -----");
         Thread.sleep(10000);
     }
     
@@ -71,6 +72,7 @@ public class userList_Runner extends BaseClass {
         Thread.sleep(5000);
         //driver.navigate().back();
         BaseClass_Driver_Methods.navigateBack(driver);  
+        System.out.println("success!....search customer");
         Thread.sleep(3000);
 	}
     
@@ -90,6 +92,7 @@ public class userList_Runner extends BaseClass {
         Assert.assertEquals(datascientistEmail, "smithjamesjs7189@gmail.com");
         Thread.sleep(5000);
         BaseClass_Driver_Methods.navigateBack(driver);
+        System.out.println("success!....search Data scientist");
         Thread.sleep(3000);
 	}  
     
@@ -106,6 +109,7 @@ public class userList_Runner extends BaseClass {
     	Assert.assertEquals(developerEmail, "johnwillamsjw2000@gmail.com");	
     	Thread.sleep(5000);
     	BaseClass_Driver_Methods.navigateBack(driver);
+    	System.out.println("success!....search Developer");
     	Thread.sleep(3000);
 	}
     
@@ -119,6 +123,7 @@ public class userList_Runner extends BaseClass {
     	Thread.sleep(3000);
     	BaseClass_Element_Methods.click(pm.ul().getDeleteUser());
     	BaseClass_Driver_Methods.navigateBack(driver);
+    	System.out.println("success!....Delete customer");
     	Thread.sleep(3000);
 	}
     
@@ -132,6 +137,7 @@ public class userList_Runner extends BaseClass {
 		Thread.sleep(3000);
 		BaseClass_Element_Methods.click(pm.ul().getDeleteUser());
 		BaseClass_Driver_Methods.navigateBack(driver);
+		System.out.println("success!....Delete Data scientist");
 		Thread.sleep(3000);
 	}
     
@@ -145,12 +151,14 @@ public class userList_Runner extends BaseClass {
 		Thread.sleep(5000);
 		BaseClass_Element_Methods.click(pm.ul().getDeleteUser());
 		BaseClass_Driver_Methods.navigateBack(driver);
-	    //BaseClass_Driver_Methods.refresh(driver);
+		System.out.println("success!....Delete Developer");
 	    Thread.sleep(2000);
 	    
 	    BaseClass_Element_Methods.click(pm.up().getClickProfile());
+	    System.out.println("success!....Admin profile clicked");
 	    Thread.sleep(1000);
 	    BaseClass_Element_Methods.click(pm.up().getViewProfile());
+	    System.out.println("success!....Admin view profile clicked");
 	}
     
     

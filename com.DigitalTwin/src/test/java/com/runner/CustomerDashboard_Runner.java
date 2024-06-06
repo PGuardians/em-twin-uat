@@ -36,7 +36,7 @@ public class CustomerDashboard_Runner extends BaseClass {
 		BaseClass_Element_Methods.sendKeys(pm.cd().getDatasetName(), datasetName);
 
 		BaseClass_Element_Methods.click(pm.cd().getClickCreateRegId());
-
+		System.out.println("RegId .... Created");
 		Thread.sleep(2000);
 
 		WebElement j = driver.findElement(By.xpath("//div[@class='dataset-name'][text()='" + datasetName + "']"));
@@ -86,6 +86,9 @@ public class CustomerDashboard_Runner extends BaseClass {
 		  System.out.println("The dataset has been successfully uploaded");
 		  Thread.sleep(2000);
 		  
+		  
+		  
+		  
 		  //edit reg id's
 //		  driver.findElement(By.cssSelector("div.file-container svg[fill=\"none\"]")).click();
 //		  Thread.sleep(2000);
@@ -100,42 +103,6 @@ public class CustomerDashboard_Runner extends BaseClass {
 //		  BaseClass_Element_Methods.click(pm.cd().getDeleteRegId());
 //		  driver.findElement(By.xpath("(//button[@class= 'me-2 px-3 py-2'])[1]")).click();
 //		  driver.findElement(By.xpath("(//button[@class= 'me-2 px-3 py-2'])[2]")).click();
-		  
-		  
-		  //-----------------------------------------------------------------------------------------------------------
-		  //Test_samp_reg
-		  
-//		  BaseClass_Driver_Methods.refresh(driver);
-//		  Thread.sleep(3000);
-//		  
-//		  BaseClass_Element_Methods.click(pm.cd().getCreateRegId1());
-		  
-//
-//			Random rand = new Random();
-//			int i1 = rand.nextInt(90) + 100;
-//
-//			String datasetName1 = "TestFile" + i1;
-//
-//			BaseClass_Element_Methods.sendKeys(pm.cd().getDatasetName1(), datasetName1);
-//
-//			BaseClass_Element_Methods.click(pm.cd().getClickCreateRegId1());
-//			
-//			driver.findElement(By.cssSelector("div.file-container svg[fill=\"none\"]")).click();
-//			Thread.sleep(2000);
-			
-
-//			WebElement j = driver.findElement(By.xpath("//div[@class='dataset-name'][text()='" + datasetName1 + "']"));
-//			String attribute1 = j.getAttribute("data-testid");
-//			String regidName1 = attribute.substring(13, 21);
-//			Thread.sleep(2000);
-
-		  
-		  //view-prof click and logout
-//		  driver.findElement(By.xpath("//img[@alt= ' arrow-back']")).click();
-//		  Actions action = new Actions(driver);
-//		  action.moveToElement(driver.findElement(By.xpath("//div[@data-testid= 'header-logout']"))).click().perform();
-//		  System.out.println("logged out success from the customer dashboard");
-		  //WebElement customerDropDown = driver.findElement(By.xpath("//div[@class= 'popover-content']"));
 		
 	}
 

@@ -57,6 +57,7 @@ public class viewProfile_Runner extends BaseClass{
 	    BaseClass_Element_Methods.sendKeys(pm.up().getConfirmnewPassword(), newPassword); 
 	    BaseClass_Element_Methods.click(pm.up().getSaveChanges());
 	    System.out.println(newPassword);
+	    System.out.println("Update password .... success!");
 	    
 	    String filePath = Env_Reader.getPropertyFromKey("Apass");
 //	    String filePath = "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\forgetPasskey_Dictonary.txt"; // Specify the path to your file
@@ -84,6 +85,7 @@ public class viewProfile_Runner extends BaseClass{
 	        BaseClass_Element_Methods.sendKeys(pm.lp().getUserName(), username);
 	        BaseClass_Element_Methods.sendKeys(pm.lp().getPassWord(), password);
 	        BaseClass_Element_Methods.click(pm.lp().getSubmit());
+	        System.out.println("Re-login .... success!");
 		
 	}
 	
@@ -93,7 +95,9 @@ public class viewProfile_Runner extends BaseClass{
 		 BaseClass_Element_Methods.click(pm.up().getClickProfile());
 		 Thread.sleep(1000);
 		 BaseClass_Element_Methods.click(pm.lp().getLogOut());
-
+		 System.out.println("Re-logout .... success!");
+		 driver.quit();
+		 System.out.println("Admin...view...tab...closed");
 	}
 	
 	
