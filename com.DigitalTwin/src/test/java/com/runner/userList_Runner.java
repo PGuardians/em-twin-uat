@@ -31,6 +31,7 @@ public class userList_Runner extends BaseClass {
     public void createUser(String firstName, String lastName, String email, String role) throws InterruptedException {
         pm = new Pom_Manager(driver);
         Thread.sleep(10000);
+        System.out.println("------ Admin login done successfully ------");
         BaseClass_Element_Methods.click(pm.ul().getCreateUser());
         Thread.sleep(10000);
         BaseClass_Element_Methods.sendKeys(pm.ul().getFirstName(), firstName);

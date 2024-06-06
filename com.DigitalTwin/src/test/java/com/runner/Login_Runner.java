@@ -45,6 +45,6 @@ public class Login_Runner extends BaseClass {
       
         
         BaseClass_Element_Methods.click(pm.lp().getSubmit());
-        System.out.println("------ Admin login done successfully ------");
+        
     }    
 }
