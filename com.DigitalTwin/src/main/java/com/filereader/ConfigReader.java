@@ -13,7 +13,7 @@ public class ConfigReader {
 		FileInputStream propertyFile=null;
 		
 	try {
-		
+			
 		 propertyFile=new FileInputStream("C:\\Users\\Dell\\Downloads\\com.DigitalTwin_Local\\em-twin-uat\\com.DigitalTwin\\Config\\config.properties");
 	}
 	catch (FileNotFoundException e) {

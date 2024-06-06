@@ -16,17 +16,23 @@ import com.utils.BaseClass_Driver_Methods;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-//import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class BaseClass {
 	public static WebDriver driver;
+	
+	
+	 private static boolean isLinux() {
+	        String osName = System.getProperty("os.name").toLowerCase();
+	        return osName.contains("linux");
+	    }
 
 	public static WebDriver initializeDriver() throws IOException {
 
 		String browserName = ConfigReader.getPropertyFromKey("browser");
 		String url = ConfigReader.getPropertyFromKey("url");
-
+		
+		
 		try {
 			if (browserName.equalsIgnoreCase("chrome")) {
 
@@ -45,18 +51,28 @@ public class BaseClass {
 				 * driver = new ChromeDriver();
 				 */
 				
-				WebDriverManager.chromedriver().setup();
 				
-		    	 System.setProperty("webdriver.chrome.driver", Env_Reader.getPropertyFromKey("Wdriverloc"));
-		    	 
-//				 "C:\\Users\\Dell\\Downloads\\com.DigitalTwin_Local\\em-twin-uat\\com.DigitalTwin\\chome\\chromedriver.exe");
-				 ChromeOptions chromeOptions = new ChromeOptions();
-				 chromeOptions.addArguments("--no-sandbox");
-				 chromeOptions.addArguments("--headless");
-				 chromeOptions.addArguments("disable-gpu");
-				 driver = new ChromeDriver(chromeOptions);
-
-				 //driver = new ChromeDriver();
+				
+				if(isLinux()) {
+					//System.setProperty("webdriver.chrome.driver", Env_Reader.getPropertyFromKey("Ldriverloc"));
+					
+					WebDriverManager.chromedriver().setup();
+			    	 
+//					 "C:\\Users\\Dell\\Downloads\\com.DigitalTwin_Local\\em-twin-uat\\com.DigitalTwin\\chome\\chromedriver.exe");
+					 ChromeOptions chromeOptions = new ChromeOptions();
+					 chromeOptions.addArguments("--no-sandbox");
+					 chromeOptions.addArguments("--headless");
+					 chromeOptions.addArguments("disable-gpu");
+					 driver = new ChromeDriver(chromeOptions);
+				}
+				else
+				{
+					WebDriverManager.chromedriver().setup();
+					
+					driver = new ChromeDriver();
+				}
+				
+				 
 
 				LogReader.logInfo("chrome browser launched");
 			} /*
@@ -75,11 +91,6 @@ public class BaseClass {
 		}
 
 		return driver;
-	}
-
-	private static File getChromeLocation() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	public static void quitDriver() {

@@ -15,3 +15,4 @@ com\filereader\ConfigReader.class
 com\pom\Login_Page.class
 com\utils\BaseClass_Screenshot_Scroll_Methods.class
 com\utils\BaseClass_Wait_Methods.class
+com\filereader\Env_Reader.class
