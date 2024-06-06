@@ -10,10 +10,13 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.filereader.ConfigReader;
+import com.filereader.Env_Reader;
 import com.filereader.LogReader;
 import com.utils.BaseClass_Driver_Methods;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class BaseClass {
@@ -44,16 +47,16 @@ public class BaseClass {
 				
 				WebDriverManager.chromedriver().setup();
 				
-				/*
-				 * System.setProperty("webdriver.chrome.driver",
-				 * "C:\\Users\\Dell\\Downloads\\com.DigitalTwin_Local\\em-twin-uat\\com.DigitalTwin\\chome\\chromedriver.exe"
-				 * ); ChromeOptions chromeOptions = new ChromeOptions();
-				 * chromeOptions.addArguments("--no-sandbox");
-				 * chromeOptions.addArguments("--headless");
-				 * chromeOptions.addArguments("disable-gpu");
-				 *///driver = new ChromeDriver(chromeOptions);
+		    	 System.setProperty("webdriver.chrome.driver", Env_Reader.getPropertyFromKey("Wdriverloc"));
+		    	 
+//				 "C:\\Users\\Dell\\Downloads\\com.DigitalTwin_Local\\em-twin-uat\\com.DigitalTwin\\chome\\chromedriver.exe");
+				 ChromeOptions chromeOptions = new ChromeOptions();
+				 chromeOptions.addArguments("--no-sandbox");
+				 chromeOptions.addArguments("--headless");
+				 chromeOptions.addArguments("disable-gpu");
+				 driver = new ChromeDriver(chromeOptions);
 
-				 driver = new ChromeDriver();
+				 //driver = new ChromeDriver();
 
 				LogReader.logInfo("chrome browser launched");
 			} /*

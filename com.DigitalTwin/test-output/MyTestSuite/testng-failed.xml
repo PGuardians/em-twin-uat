@@ -34,8 +34,6 @@
           <include name="searchDeveloper"/>
           <include name="deleteDatascientist"/>
           <include name="deleteDeveloper"/>
-          <include name="searchDatascientist"/>
-          <include name="createUser" invocation-numbers="0 1 2"/>
           <include name="deleteCustomer"/>
           <include name="searchCustomer"/>
         </methods>

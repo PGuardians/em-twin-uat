@@ -1,6 +1,9 @@
 package com.runner;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -74,7 +77,8 @@ public class userList_Runner extends BaseClass {
     @Test(priority = 2)
     public void searchDatascientist() throws InterruptedException {
 		
-    	Thread.sleep(5000);
+    	WebDriverWait expwait = new WebDriverWait(driver, Duration.ofSeconds(20));
+//    	Thread.sleep(5000);
     	BaseClass_Element_Methods.sendKeys(pm.ul().getSearchBox(), "JAMES");
     	Thread.sleep(1000);
     	

@@ -392,3 +392,65 @@
 2024-06-04 16:59:10 INFO  LogReader:15 - url launched
 2024-06-04 20:31:36 INFO  LogReader:15 - chrome browser launched
 2024-06-04 20:31:37 INFO  LogReader:15 - url launched
+2024-06-05 10:17:06 INFO  LogReader:15 - chrome browser launched
+2024-06-05 10:17:07 INFO  LogReader:15 - url launched
+2024-06-05 10:20:52 INFO  LogReader:15 - chrome browser launched
+2024-06-05 10:20:53 INFO  LogReader:15 - url launched
+2024-06-05 10:23:24 INFO  LogReader:15 - chrome browser launched
+2024-06-05 10:23:25 INFO  LogReader:15 - url launched
+2024-06-05 10:24:43 INFO  LogReader:15 - chrome browser launched
+2024-06-05 10:24:44 INFO  LogReader:15 - url launched
+2024-06-05 10:47:09 INFO  LogReader:15 - chrome browser launched
+2024-06-05 10:47:10 INFO  LogReader:15 - url launched
+2024-06-05 10:48:03 INFO  LogReader:15 - chrome browser launched
+2024-06-05 10:48:04 INFO  LogReader:15 - url launched
+2024-06-05 10:53:37 INFO  LogReader:15 - chrome browser launched
+2024-06-05 10:53:37 INFO  LogReader:15 - url launched
+2024-06-05 10:57:35 INFO  LogReader:15 - chrome browser launched
+2024-06-05 10:57:36 INFO  LogReader:15 - url launched
+2024-06-05 11:01:28 INFO  LogReader:15 - chrome browser launched
+2024-06-05 11:01:28 INFO  LogReader:15 - url launched
+2024-06-05 11:17:45 INFO  LogReader:15 - chrome browser launched
+2024-06-05 11:17:45 INFO  LogReader:15 - url launched
+2024-06-05 11:22:45 INFO  LogReader:15 - chrome browser launched
+2024-06-05 11:22:46 INFO  LogReader:15 - url launched
+2024-06-05 11:34:27 INFO  LogReader:15 - chrome browser launched
+2024-06-05 11:34:28 INFO  LogReader:15 - url launched
+2024-06-05 12:01:04 INFO  LogReader:15 - chrome browser launched
+2024-06-05 12:01:05 INFO  LogReader:15 - url launched
+2024-06-05 13:18:37 INFO  LogReader:15 - chrome browser launched
+2024-06-05 13:18:38 INFO  LogReader:15 - url launched
+2024-06-05 16:46:09 INFO  LogReader:15 - chrome browser launched
+2024-06-05 16:46:10 INFO  LogReader:15 - url launched
+2024-06-05 16:50:33 ERROR LogReader:19 - Path to the chrome executable must be set
+2024-06-05 16:56:05 ERROR LogReader:19 - Path to the chrome executable must be set
+2024-06-05 16:57:16 ERROR LogReader:19 - Path to the chrome executable must be set
+2024-06-05 16:57:49 ERROR LogReader:19 - Path to the chrome executable must be set
+2024-06-05 17:14:11 ERROR LogReader:19 - Path to the chrome executable must be set
+2024-06-05 17:19:28 ERROR LogReader:19 - Path to the chrome executable must be set
+2024-06-05 17:26:50 ERROR LogReader:19 - Path to the chrome executable must be set
+2024-06-05 17:29:54 ERROR LogReader:19 - Path to the chrome executable must be set
+2024-06-05 17:30:54 INFO  LogReader:15 - chrome browser launched
+2024-06-05 17:30:55 INFO  LogReader:15 - url launched
+2024-06-05 17:31:17 INFO  LogReader:15 - chrome browser launched
+2024-06-05 17:31:18 INFO  LogReader:15 - url launched
+2024-06-05 17:37:56 INFO  LogReader:15 - chrome browser launched
+2024-06-05 17:37:56 ERROR LogReader:19 - Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "com.base.BaseClass.driver" is null
+2024-06-05 17:39:48 INFO  LogReader:15 - chrome browser launched
+2024-06-05 17:39:51 INFO  LogReader:15 - url launched
+2024-06-05 17:55:44 INFO  LogReader:15 - chrome browser launched
+2024-06-05 17:55:46 INFO  LogReader:15 - url launched
+2024-06-06 09:32:10 INFO  LogReader:15 - chrome browser launched
+2024-06-06 09:32:10 INFO  LogReader:15 - url launched
+2024-06-06 09:37:37 INFO  LogReader:15 - chrome browser launched
+2024-06-06 09:37:38 INFO  LogReader:15 - url launched
+2024-06-06 09:38:55 INFO  LogReader:15 - chrome browser launched
+2024-06-06 09:38:56 INFO  LogReader:15 - url launched
+2024-06-06 10:55:28 INFO  LogReader:15 - chrome browser launched
+2024-06-06 10:55:29 INFO  LogReader:15 - url launched
+2024-06-06 11:03:31 INFO  LogReader:15 - chrome browser launched
+2024-06-06 11:03:35 INFO  LogReader:15 - url launched
+2024-06-06 11:09:30 INFO  LogReader:15 - chrome browser launched
+2024-06-06 11:09:32 INFO  LogReader:15 - url launched
+2024-06-06 11:12:57 INFO  LogReader:15 - chrome browser launched
+2024-06-06 11:12:59 INFO  LogReader:15 - url launched

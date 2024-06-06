@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods, 9 failed,  11 skipped,  1 passed</span>
+                    <span class="method-stats">21 methods, 5 failed,  11 skipped,  5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,21 +100,6 @@
                       <a href="#" panel-name="suite-MyTestSuite" class="show-methods failed suite-MyTestSuite"> (show)</a> <!-- show-methods failed suite-MyTestSuite -->
                     </span>
                     <div class="method-list-content failed suite-MyTestSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)">createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)">createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(William, John, johnwillamsjw2000@gmail.com, Developer)">createUser(William, John, johnwillamsjw2000@gmail.com, Developer)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="deleteCustomer">deleteCustomer</a> <!-- method navigator-link -->
@@ -133,11 +118,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="searchCustomer">searchCustomer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="searchDatascientist">searchDatascientist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -220,7 +200,27 @@
                     <div class="method-list-content passed suite-MyTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)">createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)">createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="createUser(William, John, johnwillamsjw2000@gmail.com, Developer)">createUser(William, John, johnwillamsjw2000@gmail.com, Developer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MyTestSuite" title="com.runner.Login_Runner" class="method navigator-link" hash-for-method="loginUser">loginUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.runner.userList_Runner" class="method navigator-link" hash-for-method="searchDatascientist">searchDatascientist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MyTestSuite -->
@@ -243,123 +243,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)">
-                  </a> <!-- createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist) -->
-                  <span class="method-name">createUser</span>
-                  <span class="parameters">(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Create User&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//button[text()=&apos;Create User&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.click(BaseClass_Element_Methods.java:14)
-	at com.runner.userList_Runner.createUser(userList_Runner.java:35)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)">
-                  </a> <!-- createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer) -->
-                  <span class="method-name">createUser</span>
-                  <span class="parameters">(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Create User&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//button[text()=&apos;Create User&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.click(BaseClass_Element_Methods.java:14)
-	at com.runner.userList_Runner.createUser(userList_Runner.java:35)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUser(William, John, johnwillamsjw2000@gmail.com, Developer)">
-                  </a> <!-- createUser(William, John, johnwillamsjw2000@gmail.com, Developer) -->
-                  <span class="method-name">createUser</span>
-                  <span class="parameters">(William, John, johnwillamsjw2000@gmail.com, Developer)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Create User&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//button[text()=&apos;Create User&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.click(BaseClass_Element_Methods.java:14)
-	at com.runner.userList_Runner.createUser(userList_Runner.java:35)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="deleteCustomer">
                   </a> <!-- deleteCustomer -->
                   <span class="method-name">deleteCustomer</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search by name, email, phone&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//img[@data-testid= &apos;delete-icon&apos;])[1]&quot;}
+  (Session info: chrome-headless-shell=125.0.6422.141)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//input[@placeholder=&apos;Search by name, email, phone&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
+Command: [81af0ee3d39a098ce9d162ef91fa8519, findElement {using=xpath, value=(//img[@data-testid= &apos;delete-icon&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54355/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81af0ee3d39a098ce9d162ef91fa8519
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -373,9 +268,9 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.sendKeys(BaseClass_Element_Methods.java:10)
-	at com.runner.userList_Runner.deleteCustomer(userList_Runner.java:120)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.utils.BaseClass_Element_Methods.click(BaseClass_Element_Methods.java:14)
+	at com.runner.userList_Runner.deleteCustomer(userList_Runner.java:118)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -385,15 +280,15 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="deleteDatascientist">
                   </a> <!-- deleteDatascientist -->
                   <span class="method-name">deleteDatascientist</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search by name, email, phone&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//img[@data-testid= &apos;delete-icon&apos;])[1]&quot;}
+  (Session info: chrome-headless-shell=125.0.6422.141)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//input[@placeholder=&apos;Search by name, email, phone&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
+Command: [81af0ee3d39a098ce9d162ef91fa8519, findElement {using=xpath, value=(//img[@data-testid= &apos;delete-icon&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54355/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81af0ee3d39a098ce9d162ef91fa8519
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -407,9 +302,9 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.sendKeys(BaseClass_Element_Methods.java:10)
-	at com.runner.userList_Runner.deleteDatascientist(userList_Runner.java:133)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.utils.BaseClass_Element_Methods.click(BaseClass_Element_Methods.java:14)
+	at com.runner.userList_Runner.deleteDatascientist(userList_Runner.java:131)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -419,15 +314,15 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="deleteDeveloper">
                   </a> <!-- deleteDeveloper -->
                   <span class="method-name">deleteDeveloper</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search by name, email, phone&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//img[@data-testid= &apos;delete-icon&apos;])[1]&quot;}
+  (Session info: chrome-headless-shell=125.0.6422.141)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//input[@placeholder=&apos;Search by name, email, phone&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
+Command: [81af0ee3d39a098ce9d162ef91fa8519, findElement {using=xpath, value=(//img[@data-testid= &apos;delete-icon&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54355/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81af0ee3d39a098ce9d162ef91fa8519
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -441,9 +336,9 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.sendKeys(BaseClass_Element_Methods.java:10)
-	at com.runner.userList_Runner.deleteDeveloper(userList_Runner.java:146)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.utils.BaseClass_Element_Methods.click(BaseClass_Element_Methods.java:14)
+	at com.runner.userList_Runner.deleteDeveloper(userList_Runner.java:144)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -453,15 +348,15 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="searchCustomer">
                   </a> <!-- searchCustomer -->
                   <span class="method-name">searchCustomer</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search by name, email, phone&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;sivasri691995@gmail.com&apos;]&quot;}
+  (Session info: chrome-headless-shell=125.0.6422.141)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//input[@placeholder=&apos;Search by name, email, phone&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
+Command: [81af0ee3d39a098ce9d162ef91fa8519, findElement {using=xpath, value=//td[text()=&apos;sivasri691995@gmail.com&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54355/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81af0ee3d39a098ce9d162ef91fa8519
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -475,43 +370,9 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.sendKeys(BaseClass_Element_Methods.java:10)
-	at com.runner.userList_Runner.searchCustomer(userList_Runner.java:65)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchDatascientist">
-                  </a> <!-- searchDatascientist -->
-                  <span class="method-name">searchDatascientist</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search by name, email, phone&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//input[@placeholder=&apos;Search by name, email, phone&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.sendKeys(BaseClass_Element_Methods.java:10)
-	at com.runner.userList_Runner.searchDatascientist(userList_Runner.java:87)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at com.utils.BaseClass_Element_Methods.getText(BaseClass_Element_Methods.java:30)
+	at com.runner.userList_Runner.searchCustomer(userList_Runner.java:67)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -521,15 +382,15 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="searchDeveloper">
                   </a> <!-- searchDeveloper -->
                   <span class="method-name">searchDeveloper</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search by name, email, phone&apos;]&quot;}
-  (Session info: chrome=125.0.6422.141)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;johnwillamsjw2000@gmail.com&apos;]&quot;}
+  (Session info: chrome-headless-shell=125.0.6422.141)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b58a0a778e5e98795eb262c1c91dc673, findElement {using=xpath, value=//input[@placeholder=&apos;Search by name, email, phone&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57187/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b58a0a778e5e98795eb262c1c91dc673
+Command: [81af0ee3d39a098ce9d162ef91fa8519, findElement {using=xpath, value=//td[text()=&apos;johnwillamsjw2000@gmail.com&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 125.0.6422.141, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54355/devtoo..., se:cdpVersion: 125.0.6422.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81af0ee3d39a098ce9d162ef91fa8519
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -543,9 +404,9 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at com.utils.BaseClass_Element_Methods.sendKeys(BaseClass_Element_Methods.java:10)
-	at com.runner.userList_Runner.searchDeveloper(userList_Runner.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at com.utils.BaseClass_Element_Methods.getText(BaseClass_Element_Methods.java:30)
+	at com.runner.userList_Runner.searchDeveloper(userList_Runner.java:103)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -611,7 +472,7 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="changeCustomerPassword">
                   </a> <!-- changeCustomerPassword -->
                   <span class="method-name">changeCustomerPassword</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Customer_View_Profile_Runner.changeCustomerPassword()[pri:1, instance:com.runner.Customer_View_Profile_Runner@3feb2dda] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method Customer_View_Profile_Runner.changeCustomerPassword()[pri:1, instance:com.runner.Customer_View_Profile_Runner@6a8658ff] depends on not successfully finished methods
 ... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -621,7 +482,7 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="checkCustomerLogin">
                   </a> <!-- checkCustomerLogin -->
                   <span class="method-name">checkCustomerLogin</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Customer_View_Profile_Runner.checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@3feb2dda] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method Customer_View_Profile_Runner.checkCustomerLogin()[pri:2, instance:com.runner.Customer_View_Profile_Runner@6a8658ff] depends on not successfully finished methods
 ... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -631,7 +492,7 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="clickChangeCustomerPassword">
                   </a> <!-- clickChangeCustomerPassword -->
                   <span class="method-name">clickChangeCustomerPassword</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Customer_View_Profile_Runner.clickChangeCustomerPassword()[pri:0, instance:com.runner.Customer_View_Profile_Runner@3feb2dda] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method Customer_View_Profile_Runner.clickChangeCustomerPassword()[pri:0, instance:com.runner.Customer_View_Profile_Runner@6a8658ff] depends on not successfully finished methods
 ... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -641,7 +502,7 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="logOut">
                   </a> <!-- logOut -->
                   <span class="method-name">logOut</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Customer_View_Profile_Runner.logOut()[pri:3, instance:com.runner.Customer_View_Profile_Runner@3feb2dda] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method Customer_View_Profile_Runner.logOut()[pri:3, instance:com.runner.Customer_View_Profile_Runner@6a8658ff] depends on not successfully finished methods
 ... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -659,7 +520,7 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="uploadDataset">
                   </a> <!-- uploadDataset -->
                   <span class="method-name">uploadDataset</span>
-                  <div class="stack-trace">java.lang.Throwable: Method CustomerDashboard_Runner.uploadDataset()[pri:0, instance:com.runner.CustomerDashboard_Runner@14fc5f04] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method CustomerDashboard_Runner.uploadDataset()[pri:0, instance:com.runner.CustomerDashboard_Runner@6e2829c7] depends on not successfully finished methods
 ... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -677,7 +538,7 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="loginCustomer">
                   </a> <!-- loginCustomer -->
                   <span class="method-name">loginCustomer</span>
-                  <div class="stack-trace">java.lang.Throwable: Method CustomerLogin_Runner.loginCustomer()[pri:1, instance:com.runner.CustomerLogin_Runner@15888343] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method CustomerLogin_Runner.loginCustomer()[pri:1, instance:com.runner.CustomerLogin_Runner@33ecda92] depends on not successfully finished methods
 ... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -687,13 +548,52 @@ Session ID: b58a0a778e5e98795eb262c1c91dc673
                   <a name="setUp">
                   </a> <!-- setUp -->
                   <span class="method-name">setUp</span>
-                  <div class="stack-trace">java.lang.Throwable: Method CustomerLogin_Runner.setUp()[pri:0, instance:com.runner.CustomerLogin_Runner@15888343] depends on not successfully finished methods
+                  <div class="stack-trace">java.lang.Throwable: Method CustomerLogin_Runner.setUp()[pri:0, instance:com.runner.CustomerLogin_Runner@33ecda92] depends on not successfully finished methods
 ... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-MyTestSuite-class-skipped -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.runner.userList_Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)">
+                  </a> <!-- createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist) -->
+                  <span class="method-name">createUser</span>
+                  <span class="parameters">(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)">
+                  </a> <!-- createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer) -->
+                  <span class="method-name">createUser</span>
+                  <span class="parameters">(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser(William, John, johnwillamsjw2000@gmail.com, Developer)">
+                  </a> <!-- createUser(William, John, johnwillamsjw2000@gmail.com, Developer) -->
+                  <span class="method-name">createUser</span>
+                  <span class="parameters">(William, John, johnwillamsjw2000@gmail.com, Developer)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchDatascientist">
+                  </a> <!-- searchDatascientist -->
+                  <span class="method-name">searchDatascientist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
           <div class="suite-MyTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -770,92 +670,92 @@ data.addRows(21);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createUser')
 data.setCell(0, 2, 'com.runner.userList_Runner')
-data.setCell(0, 3, 10066);
+data.setCell(0, 3, 30900);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createUser')
 data.setCell(1, 2, 'com.runner.userList_Runner')
-data.setCell(1, 3, 10034);
+data.setCell(1, 3, 30837);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'createUser')
 data.setCell(2, 2, 'com.runner.userList_Runner')
-data.setCell(2, 3, 10028);
+data.setCell(2, 3, 30716);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginUser')
-data.setCell(3, 2, 'com.runner.Login_Runner')
-data.setCell(3, 3, 5367);
+data.setCell(3, 1, 'searchCustomer')
+data.setCell(3, 2, 'com.runner.userList_Runner')
+data.setCell(3, 3, 6402);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchDatascientist')
+data.setCell(4, 1, 'deleteCustomer')
 data.setCell(4, 2, 'com.runner.userList_Runner')
-data.setCell(4, 3, 5044);
+data.setCell(4, 3, 6240);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'searchCustomer')
+data.setCell(5, 1, 'searchDeveloper')
 data.setCell(5, 2, 'com.runner.userList_Runner')
-data.setCell(5, 3, 5041);
+data.setCell(5, 3, 6170);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'deleteDeveloper')
 data.setCell(6, 2, 'com.runner.userList_Runner')
-data.setCell(6, 3, 5035);
+data.setCell(6, 3, 6146);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'deleteDatascientist')
 data.setCell(7, 2, 'com.runner.userList_Runner')
-data.setCell(7, 3, 5031);
+data.setCell(7, 3, 6138);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'searchDeveloper')
-data.setCell(8, 2, 'com.runner.userList_Runner')
-data.setCell(8, 3, 5028);
+data.setCell(8, 1, 'loginUser')
+data.setCell(8, 2, 'com.runner.Login_Runner')
+data.setCell(8, 3, 5973);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'deleteCustomer')
+data.setCell(9, 1, 'searchDatascientist')
 data.setCell(9, 2, 'com.runner.userList_Runner')
-data.setCell(9, 3, 5026);
+data.setCell(9, 3, 14);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'checkLogin')
-data.setCell(10, 2, 'com.runner.viewProfile_Runner')
+data.setCell(10, 1, 'changeCustomerPassword')
+data.setCell(10, 2, 'com.runner.Customer_View_Profile_Runner')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'clickChangeCustomerPassword')
-data.setCell(11, 2, 'com.runner.Customer_View_Profile_Runner')
+data.setCell(11, 1, 'checkLogin')
+data.setCell(11, 2, 'com.runner.viewProfile_Runner')
 data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'logOut')
-data.setCell(12, 2, 'com.runner.Customer_View_Profile_Runner')
+data.setCell(12, 1, 'loginCustomer')
+data.setCell(12, 2, 'com.runner.CustomerLogin_Runner')
 data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'logOut')
-data.setCell(13, 2, 'com.runner.viewProfile_Runner')
+data.setCell(13, 1, 'checkCustomerLogin')
+data.setCell(13, 2, 'com.runner.Customer_View_Profile_Runner')
 data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'loginCustomer')
-data.setCell(14, 2, 'com.runner.CustomerLogin_Runner')
+data.setCell(14, 1, 'changePassword')
+data.setCell(14, 2, 'com.runner.viewProfile_Runner')
 data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'clickChangePassword')
-data.setCell(15, 2, 'com.runner.viewProfile_Runner')
+data.setCell(15, 1, 'logOut')
+data.setCell(15, 2, 'com.runner.Customer_View_Profile_Runner')
 data.setCell(15, 3, 0);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'changePassword')
+data.setCell(16, 1, 'logOut')
 data.setCell(16, 2, 'com.runner.viewProfile_Runner')
 data.setCell(16, 3, 0);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'uploadDataset')
-data.setCell(17, 2, 'com.runner.CustomerDashboard_Runner')
+data.setCell(17, 1, 'setUp')
+data.setCell(17, 2, 'com.runner.CustomerLogin_Runner')
 data.setCell(17, 3, 0);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'checkCustomerLogin')
+data.setCell(18, 1, 'clickChangeCustomerPassword')
 data.setCell(18, 2, 'com.runner.Customer_View_Profile_Runner')
 data.setCell(18, 3, 0);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'setUp')
-data.setCell(19, 2, 'com.runner.CustomerLogin_Runner')
+data.setCell(19, 1, 'clickChangePassword')
+data.setCell(19, 2, 'com.runner.viewProfile_Runner')
 data.setCell(19, 3, 0);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'changeCustomerPassword')
-data.setCell(20, 2, 'com.runner.Customer_View_Profile_Runner')
+data.setCell(20, 1, 'uploadDataset')
+data.setCell(20, 2, 'com.runner.CustomerDashboard_Runner')
 data.setCell(20, 3, 0);
 window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-MyTestSuite">
               </div> <!-- times-div-MyTestSuite -->
             </div> <!-- times-div -->
@@ -888,64 +788,56 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginUser</span>
-                <span class="method-start">3504 ms</span>
+                <span class="method-start">4609 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.userList_Runner</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createUser(Srinivasan, Sud, twinarcdemo@gmail.com, Customer)</span>
-                <span class="method-start">8876 ms</span>
+                <span class="method-start">10591 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createUser(James, Smith, smithjamesjs7189@gmail.com, Data Scientist)</span>
-                <span class="method-start">18946 ms</span>
+                <span class="method-start">41493 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createUser(William, John, johnwillamsjw2000@gmail.com, Developer)</span>
-                <span class="method-start">28982 ms</span>
+                <span class="method-start">72331 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searchCustomer</span>
-                <span class="method-start">39011 ms</span>
+                <span class="method-start">103049 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">searchDatascientist</span>
-                <span class="method-start">44053 ms</span>
+                <span class="method-start">109456 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searchDeveloper</span>
-                <span class="method-start">49100 ms</span>
+                <span class="method-start">109472 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deleteCustomer</span>
-                <span class="method-start">54130 ms</span>
+                <span class="method-start">115645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deleteDatascientist</span>
-                <span class="method-start">59158 ms</span>
+                <span class="method-start">121887 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deleteDeveloper</span>
-                <span class="method-start">64192 ms</span>
+                <span class="method-start">128027 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
