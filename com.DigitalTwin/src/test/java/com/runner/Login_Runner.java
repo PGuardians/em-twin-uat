@@ -3,6 +3,8 @@ package com.runner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.base.BaseClass;
@@ -12,6 +14,8 @@ import com.utils.BaseClass_Element_Methods;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Login_Runner extends BaseClass {
 
@@ -41,10 +45,18 @@ public class Login_Runner extends BaseClass {
 //        String password = "Eminds@1";
         Thread.sleep(5000);
         BaseClass_Element_Methods.sendKeys(pm.lp().getUserName(), username);
-        BaseClass_Element_Methods.sendKeys(pm.lp().getPassWord(), password);
-      
-        
+        BaseClass_Element_Methods.sendKeys(pm.lp().getPassWord(), password);        
         BaseClass_Element_Methods.click(pm.lp().getSubmit());
+        
+        WebDriverWait alwait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        alwait.until(ExpectedConditions.urlToBe("https://digitaltwinarc-uat.ddns.net/userlist"));
+        String adminUrl = driver.getCurrentUrl();
+        System.out.println(adminUrl);
+        if(adminUrl != "https://digitaltwinarc-uat.ddns.net/" ) {
+        	System.out.println("Admin login -- SUCCESS...!");
+        }else {
+        	System.out.println("Admin login -- FAILED...?");
+        }
         
     }    
 }

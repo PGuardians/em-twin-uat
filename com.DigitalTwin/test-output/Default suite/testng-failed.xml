@@ -3,22 +3,7 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="com.runner.userList_Runner"/>
+      <class name="com.runner.Login_Runner"/>
     </classes>
   </test> <!-- Default test -->
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="com.runner.userList_Runner">
-        <methods>
-          <include name="searchDeveloper"/>
-          <include name="deleteDatascientist"/>
-          <include name="deleteDeveloper"/>
-          <include name="searchDatascientist"/>
-          <include name="createUser" invocation-numbers="0 1 2"/>
-          <include name="deleteCustomer"/>
-          <include name="searchCustomer"/>
-        </methods>
-      </class> <!-- com.runner.userList_Runner -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
