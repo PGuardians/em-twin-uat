@@ -35,9 +35,8 @@
           <include name="deleteDatascientist"/>
           <include name="deleteDeveloper"/>
           <include name="searchDatascientist"/>
-          <include name="createUser" invocation-numbers="0 1 2"/>
+          <include name="createUser" invocation-numbers="1 2"/>
           <include name="deleteCustomer"/>
-          <include name="searchCustomer"/>
         </methods>
       </class> <!-- com.runner.userList_Runner -->
       <class name="com.runner.CustomerDashboard_Runner">
@@ -54,7 +53,6 @@
       <class name="com.runner.Login_Runner">
         <methods>
           <include name="setUp"/>
-          <include name="loginUser"/>
         </methods>
       </class> <!-- com.runner.Login_Runner -->
     </classes>
