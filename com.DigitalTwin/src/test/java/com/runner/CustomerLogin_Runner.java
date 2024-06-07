@@ -3,7 +3,10 @@ package com.runner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.base.BaseClass;
@@ -40,7 +43,16 @@ public class CustomerLogin_Runner extends BaseClass{
         BaseClass_Element_Methods.sendKeys(pm.cl().getCustomerUsername(), customerId);
         BaseClass_Element_Methods.sendKeys(pm.cl().getCustomerPassword(), password);
         BaseClass_Element_Methods.click(pm.cl().getLogin());
-        System.out.println("Customer login success");
+        
+        WebDriverWait alwait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        alwait.until(ExpectedConditions.urlToBe("https://digitaltwinarc-uat.ddns.net/regid"));
+        String adminUrl = driver.getCurrentUrl();
+        System.out.println(adminUrl);
+        if(adminUrl != "https://digitaltwinarc-uat.ddns.net/" ) {
+        	System.out.println("Admin login -- SUCCESS...!");
+        }else {
+        	System.out.println("Admin login -- FAILED...?");
+        }
         Thread.sleep(2000);
     }    
 

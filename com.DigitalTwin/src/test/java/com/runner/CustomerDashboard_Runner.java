@@ -46,16 +46,16 @@ public class CustomerDashboard_Runner extends BaseClass {
 		WebElement clickUpload = driver
 				.findElement(By.xpath("//button[@data-testid='upload-csv-button-" + regidName + "']"));
 
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		BaseClass_Element_Methods.click(clickUpload);
 
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 		BaseClass_Element_Methods.click(pm.cd().getChooseAFile());
 		
 		Thread.sleep(3000);
 		
 			String file= Env_Reader.getPropertyFromKey("csvpath");
-	        System.out.println("csv path:"+file);
+	        System.out.println("csv path: "+file);
 		  //String file= "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\Resources\\batch-1-23x.csv";
 		  file = file.replace("\\\\", "\\");
 		  StringSelection stringSelection = new StringSelection(file);
