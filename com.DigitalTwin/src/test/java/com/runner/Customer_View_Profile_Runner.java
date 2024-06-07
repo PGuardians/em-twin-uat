@@ -42,8 +42,10 @@ public class Customer_View_Profile_Runner extends BaseClass{
 		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("S");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
 		 Thread.sleep(2000);
-		 
 		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).clear();
+		 Thread.sleep(2000);
+		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("Devoop");
+		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
 		 Thread.sleep(2000);
 //		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("VASAN");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
