@@ -13,14 +13,22 @@
   </test> <!-- MyTest -->
   <test parallel="none" name="MyTest(failed)">
     <classes>
-      <class name="com.runner.viewProfile_Runner">
+      <class name="com.runner.Login_Runner">
         <methods>
-          <include name="changePassword"/>
-          <include name="logOut"/>
-          <include name="checkLogin"/>
-          <include name="clickChangePassword"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.runner.viewProfile_Runner -->
+      </class> <!-- com.runner.Login_Runner -->
+      <class name="com.runner.CustomerLogin_Runner">
+        <methods>
+          <include name="loginCustomer"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.runner.CustomerLogin_Runner -->
+      <class name="com.runner.CustomerDashboard_Runner">
+        <methods>
+          <include name="uploadDataset"/>
+        </methods>
+      </class> <!-- com.runner.CustomerDashboard_Runner -->
       <class name="com.runner.Customer_View_Profile_Runner">
         <methods>
           <include name="changeCustomerPassword"/>
@@ -29,32 +37,25 @@
           <include name="logOut"/>
         </methods>
       </class> <!-- com.runner.Customer_View_Profile_Runner -->
+      <class name="com.runner.viewProfile_Runner">
+        <methods>
+          <include name="changePassword"/>
+          <include name="logOut"/>
+          <include name="checkLogin"/>
+          <include name="clickChangePassword"/>
+        </methods>
+      </class> <!-- com.runner.viewProfile_Runner -->
       <class name="com.runner.userList_Runner">
         <methods>
           <include name="searchDeveloper"/>
           <include name="deleteDatascientist"/>
           <include name="deleteDeveloper"/>
           <include name="searchDatascientist"/>
-          <include name="createUser" invocation-numbers="1 2"/>
+          <include name="createUser" invocation-numbers="0 1 2"/>
           <include name="deleteCustomer"/>
+          <include name="searchCustomer"/>
         </methods>
       </class> <!-- com.runner.userList_Runner -->
-      <class name="com.runner.CustomerDashboard_Runner">
-        <methods>
-          <include name="uploadDataset"/>
-        </methods>
-      </class> <!-- com.runner.CustomerDashboard_Runner -->
-      <class name="com.runner.CustomerLogin_Runner">
-        <methods>
-          <include name="loginCustomer"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.runner.CustomerLogin_Runner -->
-      <class name="com.runner.Login_Runner">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.runner.Login_Runner -->
     </classes>
   </test> <!-- MyTest(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->
