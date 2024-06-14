@@ -3,15 +3,29 @@ package com.runner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.base.BaseClass;
 import com.filereader.Env_Reader;
 import com.pom_manager.Pom_Manager;
 import com.utils.BaseClass_Element_Methods;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,12 +34,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Login_Runner extends BaseClass {
 
     private Pom_Manager pm; // Declare Pom_Manager
+    ExtentReports extentReport;
     
-
     @BeforeMethod
     public void setUp() throws IOException {
         initializeDriver();
         pm = new Pom_Manager(driver); // Initialize Pom_Manager
+        extentReport = new ExtentReports();
+        
+        String reportPath= Env_Reader.getPropertyFromKey("repPath");
+        System.out.println("location:"+reportPath);
+        
+        ExtentSparkReporter spark = new ExtentSparkReporter("reportPath");
+        extentReport.attachReporter(spark);
+//        extentReport.flush();
     }
 
    	@Test

@@ -30,6 +30,10 @@ public class BaseClass_Element_Methods {
 		return  element.getText();
 	  }
 	  
+	  public static String getAttribute(WebElement element) {
+		  return element.getAttribute("value");
+	  }
+	  
 	  public static void submit(WebElement element) {
 		  element.submit();
 	  }
