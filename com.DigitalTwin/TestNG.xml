@@ -5,10 +5,11 @@
         <classes>			  
             <class name="com.runner.Login_Runner"/>
            	<class name="com.runner.userList_Runner"/>  
-            <class name="com.runner.viewProfile_Runner"/>  
+            <class name="com.runner.viewProfile_Runner"/>
             <class name="com.runner.CustomerLogin_Runner"/>   
             <class name="com.runner.CustomerDashboard_Runner"/>
-            <class name="com.runner.Customer_View_Profile_Runner"/> 
+            <class name="com.runner.Customer_View_Profile_Runner"/>
         </classes>
+        
     </test>
 </suite>

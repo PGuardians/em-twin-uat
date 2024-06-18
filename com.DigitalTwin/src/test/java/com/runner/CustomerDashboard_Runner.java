@@ -6,10 +6,13 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.base.BaseClass;
@@ -36,32 +39,32 @@ public class CustomerDashboard_Runner extends BaseClass {
 		BaseClass_Element_Methods.sendKeys(pm.cd().getDatasetName(), datasetName);
 
 		BaseClass_Element_Methods.click(pm.cd().getClickCreateRegId());
-		System.out.println("RegId .... Created");
+		System.out.println("RegId ...."+datasetName+"....Created");
 		Thread.sleep(2000);
 
 		WebElement j = driver.findElement(By.xpath("//div[@class='dataset-name'][text()='" + datasetName + "']"));
 		String attribute = j.getAttribute("data-testid");
 		String regidName = attribute.substring(13, 21);
 
-		WebElement clickUpload = driver
-				.findElement(By.xpath("//button[@data-testid='upload-csv-button-" + regidName + "']"));
+		WebElement clickUpload = driver.findElement(By.xpath("//button[@data-testid='upload-csv-button-" + regidName + "']"));
 
 		Thread.sleep(3000);
 		BaseClass_Element_Methods.click(clickUpload);
 
-		Thread.sleep(4000);
+//		Thread.sleep(4000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+		wait.until(ExpectedConditions.visibilityOfElementLocated
+				(By.xpath("//div[@class='d-flex justify-content-center align-items-center my-2']")));
 		BaseClass_Element_Methods.click(pm.cd().getChooseAFile());
 		
-		Thread.sleep(3000);
-		
-			String file= Env_Reader.getPropertyFromKey("csvpath");
-	        System.out.println("csv path: "+file);
+		  Thread.sleep(3000);
+		  String file= Env_Reader.getPropertyFromKey("csvpath");
+	      System.out.println("csv path: "+file);
 		  //String file= "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\Resources\\batch-1-23x.csv";
 		  file = file.replace("\\\\", "\\");
 		  StringSelection stringSelection = new StringSelection(file);
 		  
-		  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection,
-		  null);
+		  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 		  
 		  Robot robot=new Robot();
 		  
@@ -80,9 +83,13 @@ public class CustomerDashboard_Runner extends BaseClass {
 		  BaseClass_Element_Methods.click(pm.cd().getUpload());		
 		  WebElement uploadClick = driver.findElement(By.xpath("//button[text()= 'UPLOAD']"));
 		  uploadClick.click();
-		  Thread.sleep(10000);
-		  WebElement clickOkButton = driver.findElement(By.xpath("//div[@class= 'py-2 mx-auto text-center']"));
-		  clickOkButton.click();
+		  
+//		  Thread.sleep(10000);
+		  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+		  wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class= 'py-2 mx-auto text-center']")));
+//		  WebElement clickOkButton = driver.findElement(By.xpath("//div[@class= 'py-2 mx-auto text-center']"));
+//		  clickOkButton.click();
+		  BaseClass_Element_Methods.click(pm.cd().getCustomerConfirmationOkButton());
 		  System.out.println("The dataset has been successfully uploaded");
 		  Thread.sleep(2000);
 		  

@@ -9,12 +9,15 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.Duration;
 import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -33,22 +36,56 @@ public class Customer_View_Profile_Runner extends BaseClass{
 	public void clickChangeCustomerPassword() throws InterruptedException, AWTException 
 	{
 		 pm = new Pom_Manager(driver);		
-		 Thread.sleep(5000);
+//		 Thread.sleep(5000);
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		 wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='avatar']")));
+		 
 //		 driver.findElement(By.xpath("//input[@data-testid='updatepassword-current-password']")).click();
 		 BaseClass_Element_Methods.click(pm.cp().getClickProfile()); 
 		 System.out.println("Customer profile clicked");
-		 Thread.sleep(1000);
+		 WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));
+		 wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[text()='View Profile']")));
+//		 Thread.sleep(1000);
+		 
 		 BaseClass_Element_Methods.click(pm.cp().getViewProfile());
 		 System.out.println("Customer view profile clicked");
-		 Thread.sleep(1000);
-		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("S");
+		 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(5));
+		 wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy
+				 (By.xpath("//input[@data-testid= 'profile-user-lastname-input']")));
+//		 Thread.sleep(1000);
+		 
+//		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("S");
+		 BaseClass_Element_Methods.click(pm.cp().getEditCustomerLastname());
+		 Robot robot = new Robot();
+		 robot.keyPress(KeyEvent.VK_CONTROL);
+		 robot.keyPress(KeyEvent.VK_A);
+		 robot.keyRelease(KeyEvent.VK_A);
+		 robot.keyRelease(KeyEvent.VK_CONTROL);
+		 robot.keyPress(KeyEvent.VK_BACK_SPACE);
+		 robot.keyRelease(KeyEvent.VK_BACK_SPACE);
+//		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).clear();
+		 Thread.sleep(2000);
+		 BaseClass_Element_Methods.sendKeys(pm.cp().getEditCustomerLastname(), "Mano em");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
 		 Thread.sleep(2000);
-		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).clear();
+		 
+		 BaseClass_Element_Methods.click(pm.cp().getEditCustomerLastname());
+		 robot.keyPress(KeyEvent.VK_CONTROL);
+		 robot.keyPress(KeyEvent.VK_A);
+		 robot.keyRelease(KeyEvent.VK_A);
+		 robot.keyRelease(KeyEvent.VK_CONTROL);
+		 robot.keyPress(KeyEvent.VK_BACK_SPACE);
+		 robot.keyRelease(KeyEvent.VK_BACK_SPACE);
+//		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).clear();
 		 Thread.sleep(2000);
-		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("Devoop");
+//		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
+//		 Thread.sleep(2000);
+//		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("Devoop");
+		 BaseClass_Element_Methods.sendKeys(pm.cp().getEditCustomerLastname(), "Mano EM");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
-		 Thread.sleep(2000);
+		 WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(5));
+		 wait3.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//button[@type='submit']")));
+//		 Thread.sleep(2000);
 //		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("VASAN");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
 		 System.out.println("Last name edited successfully");
@@ -87,12 +124,13 @@ public class Customer_View_Profile_Runner extends BaseClass{
 		    	newpw.sendKeys("Customer@1");
 		    	String np = BaseClass_Element_Methods.getAttribute(pm.up().getNewPassword());
 	        	System.out.println("New_Password:"+ np);
-	        	Thread.sleep(2000);
+	        	Thread.sleep(1000);
 		    }else {
 		    	WebElement newpw1 = driver.findElement(By.xpath("//input[@data-testid='updatepassword-new-password']"));
 		    	newpw1.sendKeys("Customer@2");
 		    	String np = BaseClass_Element_Methods.getAttribute(pm.up().getNewPassword());
 	        	System.out.println("New_Password:"+ np);
+	        	Thread.sleep(1000);
 		    }
 		   
 		    if(Cus_crp.equalsIgnoreCase("Customer@2")) {
@@ -100,12 +138,13 @@ public class Customer_View_Profile_Runner extends BaseClass{
 		    	cnfm_new_pw.sendKeys("Customer@1");
 		    	String cnp = BaseClass_Element_Methods.getAttribute(pm.up().getConfirmnewPassword());
 	        	System.out.println("Confirm_New_Password:"+ cnp);
-	        	Thread.sleep(2000);
+	        	Thread.sleep(1000);
 		    }else {
 		    	WebElement cnfm_new_pw1 = driver.findElement(By.xpath("//input[@data-testid='updatepassword-confirm-new-password']"));
 		    	cnfm_new_pw1.sendKeys("Customer@2");
 		    	String cnp = BaseClass_Element_Methods.getAttribute(pm.up().getConfirmnewPassword());
 	        	System.out.println("Confirm_New_Password:"+ cnp);
+	        	Thread.sleep(1000);
 		    	}
 		
 //		   BaseClass_Element_Methods.sendKeys(pm.cp().getNewPassword(), newPassword1);
@@ -139,7 +178,9 @@ public class Customer_View_Profile_Runner extends BaseClass{
 	       System.out.println("customerId: "+customerId);
 		   //String username = "eminds.edge@gmail.com"; //"srinivasansudharsanan95@gmail.com";  
 	       String password = Cus_newPassword;
-	       Thread.sleep(5000);
+	       Thread.sleep(1000);
+//	       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//	       wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("login-email-input")));
 	       BaseClass_Element_Methods.sendKeys(pm.lp().getUserName(), customerId);
 	       BaseClass_Element_Methods.sendKeys(pm.lp().getPassWord(), password);
 	       BaseClass_Element_Methods.click(pm.lp().getSubmit());

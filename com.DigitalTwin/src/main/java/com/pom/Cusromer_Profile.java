@@ -30,6 +30,10 @@ public class Cusromer_Profile {
 		@FindBy(xpath="//input[@data-testid= 'profile-user-lastname-input']")
 		private WebElement EditCustomerLastname;
 		
+		public WebElement getEditCustomerLastname() {
+			return EditCustomerLastname;		
+		}
+		
 		public WebElement getEditLastname() {
 			return CustomersaveChanges;		
 		}

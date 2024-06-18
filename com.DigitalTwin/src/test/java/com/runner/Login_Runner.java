@@ -43,7 +43,7 @@ public class Login_Runner extends BaseClass {
         extentReport = new ExtentReports();
         
         String reportPath= Env_Reader.getPropertyFromKey("repPath");
-        System.out.println("location:"+reportPath);
+        System.out.println("Extent_Report_location:"+reportPath);
         
         ExtentSparkReporter spark = new ExtentSparkReporter("reportPath");
         extentReport.attachReporter(spark);
@@ -58,6 +58,7 @@ public class Login_Runner extends BaseClass {
         
        String locn= Env_Reader.getPropertyFromKey("Apass");
        System.out.println("location:"+locn);
+       
        
        // String locn = "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\forgetPasskey_Dictonary.txt";
         FileReader fileReader = new FileReader(locn);

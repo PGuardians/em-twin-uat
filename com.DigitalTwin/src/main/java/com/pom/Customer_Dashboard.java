@@ -42,6 +42,13 @@ public class Customer_Dashboard {
 		return datasetName1;
 	}
 	
+	public WebElement getCustomerConfirmationOkButton() {
+		return CustomerConfirmOkButton;
+	}
+	
+	@FindBy(xpath="//div[@class= 'py-2 mx-auto text-center']")
+	private WebElement CustomerConfirmOkButton;
+	
 	@FindBy(xpath="//input[@data-testid='create-popup-dataset-input']")
 	private WebElement datasetName1;
 
