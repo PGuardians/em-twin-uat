@@ -1,5 +1,6 @@
 package com.runner;
 
+import java.awt.Desktop;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -17,6 +18,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.base.BaseClass;
 import com.filereader.Env_Reader;
@@ -40,17 +42,20 @@ public class Login_Runner extends BaseClass {
     public void setUp() throws IOException {
         initializeDriver();
         pm = new Pom_Manager(driver); // Initialize Pom_Manager
-        extentReport = new ExtentReports();
+//        extentReport = new ExtentReports();
         
         String reportPath= Env_Reader.getPropertyFromKey("repPath");
         System.out.println("Extent_Report_location:"+reportPath);
         
-        ExtentSparkReporter spark = new ExtentSparkReporter("reportPath");
-        extentReport.attachReporter(spark);
+//        ExtentSparkReporter spark = new ExtentSparkReporter("reportPath");
+//        extentReport.attachReporter(spark);
+//        ExtentTest test1 = extentReport.createTest("Test");
+//        test1.pass("hey.. the test was passed");
+        
 //        extentReport.flush();
     }
 
-   	@Test
+   	@Test(testName = "Admin_Login_test")
     public void loginUser() throws InterruptedException, IOException {
         //String username = "dinesh@eminds.ai";
     	String username = Env_Reader.getPropertyFromKey("Admin");
@@ -80,6 +85,6 @@ public class Login_Runner extends BaseClass {
         }else {
         	System.out.println("Admin login -- FAILED...?");
         }
-        
-    }    
+//        extentReport.flush();
+   	}    
 }

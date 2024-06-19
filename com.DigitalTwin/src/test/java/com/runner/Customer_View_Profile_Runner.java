@@ -32,7 +32,7 @@ public class Customer_View_Profile_Runner extends BaseClass{
 	 static String Cus_newPassword;
 	 public Pom_Manager pm;
 	
-	@Test(priority = 0, dependsOnMethods = {"com.runner.CustomerDashboard_Runner.uploadDataset"})
+	@Test(testName= "Customer_editName_&_clickChangePassword", priority = 0, dependsOnMethods = {"com.runner.CustomerDashboard_Runner.uploadDataset"})
 	public void clickChangeCustomerPassword() throws InterruptedException, AWTException 
 	{
 		 pm = new Pom_Manager(driver);		
@@ -67,6 +67,8 @@ public class Customer_View_Profile_Runner extends BaseClass{
 		 Thread.sleep(2000);
 		 BaseClass_Element_Methods.sendKeys(pm.cp().getEditCustomerLastname(), "Mano em");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
+		 String ln1 = BaseClass_Element_Methods.getAttribute(pm.cp().getEditCustomerLastname());
+		 System.out.println("Last name editedand changed from Mano EM to "+ln1);
 		 Thread.sleep(2000);
 		 
 		 BaseClass_Element_Methods.click(pm.cp().getEditCustomerLastname());
@@ -83,19 +85,21 @@ public class Customer_View_Profile_Runner extends BaseClass{
 //		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("Devoop");
 		 BaseClass_Element_Methods.sendKeys(pm.cp().getEditCustomerLastname(), "Mano EM");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
+		 
 		 WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(5));
 		 wait3.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//button[@type='submit']")));
 //		 Thread.sleep(2000);
 //		 driver.findElement(By.xpath("//input[@data-testid= 'profile-user-lastname-input']")).sendKeys("VASAN");
 		 BaseClass_Element_Methods.click(pm.cp().getEditLastname());
-		 System.out.println("Last name edited successfully");
+		 String ln2 = BaseClass_Element_Methods.getAttribute(pm.cp().getEditCustomerLastname());
+		 System.out.println("Last name editedand changed from "+ln1+" to "+ln2);
 		 
 		 JavascriptExecutor executor = (JavascriptExecutor)driver;
 		 executor.executeScript("arguments[0].click();", pm.cp().getChangePassword());		
 	}
 	
 
-	@Test(priority = 1,dependsOnMethods = {"com.runner.Customer_View_Profile_Runner.clickChangeCustomerPassword"})
+	@Test(testName= "Customer_Change_Password", priority = 1,dependsOnMethods = {"com.runner.Customer_View_Profile_Runner.clickChangeCustomerPassword"})
 	public void changeCustomerPassword() throws InterruptedException, IOException {
 	
 			Thread.sleep(2000);
@@ -171,7 +175,7 @@ public class Customer_View_Profile_Runner extends BaseClass{
 	}
 
 	
-	@Test(priority = 2,dependsOnMethods = {"com.runner.Customer_View_Profile_Runner.changeCustomerPassword"})
+	@Test(testName= "Customer_Re-Login", priority = 2,dependsOnMethods = {"com.runner.Customer_View_Profile_Runner.changeCustomerPassword"})
 	public void checkCustomerLogin() throws InterruptedException, IOException {
 			
 		   String customerId= Env_Reader.getPropertyFromKey("Customer");
@@ -187,9 +191,9 @@ public class Customer_View_Profile_Runner extends BaseClass{
 	
 	}
 
-	@Test(priority = 3,dependsOnMethods = {"com.runner.Customer_View_Profile_Runner.checkCustomerLogin"})
+	@Test(testName= "Customer_logout", priority = 3,dependsOnMethods = {"com.runner.Customer_View_Profile_Runner.checkCustomerLogin"})
 	public void logOut() throws InterruptedException {
-		 Thread.sleep(2000);
+		 Thread.sleep(3000);
 		 BaseClass_Element_Methods.click(pm.cp().getClickProfile());
 		 Thread.sleep(1000);
 		 BaseClass_Element_Methods.click(pm.lp().getLogOut());

@@ -28,7 +28,7 @@ public class viewProfile_Runner extends BaseClass{
 	 static String newPassword;
 	 public Pom_Manager pm;
 	
-	@Test(priority = 0, dependsOnMethods = {"com.runner.userList_Runner.deleteDeveloper"})
+	@Test(testName= "Admin_Change_Password_Click", priority = 0, dependsOnMethods = {"com.runner.userList_Runner.deleteDeveloper"})
 	public void clickChangePassword() throws InterruptedException 
 	{
 		 pm = new Pom_Manager(driver);		
@@ -39,7 +39,7 @@ public class viewProfile_Runner extends BaseClass{
 		 executor.executeScript("arguments[0].click();", pm.up().getChangePassword());//click on change password button		
 	}
 	
-	@Test(priority = 1,dependsOnMethods = {"com.runner.viewProfile_Runner.clickChangePassword"})
+	@Test(testName= "Admin_Change_Password", priority = 1,dependsOnMethods = {"com.runner.viewProfile_Runner.clickChangePassword"})
 	public void changePassword() throws InterruptedException, IOException {
 		
 		Thread.sleep(2000);
@@ -151,7 +151,7 @@ public class viewProfile_Runner extends BaseClass{
 //        }   
 	}
 	
-	@Test(priority = 2,dependsOnMethods = {"com.runner.viewProfile_Runner.changePassword"})
+	@Test(testName= "Admin_Re-login_with_newPassword", priority = 2,dependsOnMethods = {"com.runner.viewProfile_Runner.changePassword"})
 	public void checkLogin() throws InterruptedException {
 			//Thread.sleep(3000);
 
@@ -172,7 +172,7 @@ public class viewProfile_Runner extends BaseClass{
 	        }		
 	}
 	
-	@Test(priority = 3,dependsOnMethods = {"com.runner.viewProfile_Runner.checkLogin"})
+	@Test(testName= "Admin_Log-out",priority = 3,dependsOnMethods = {"com.runner.viewProfile_Runner.checkLogin"})
 	public void logOut() throws InterruptedException {
 		 //Thread.sleep(2000);
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));

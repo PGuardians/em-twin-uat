@@ -25,7 +25,7 @@ public class CustomerDashboard_Runner extends BaseClass {
 
 	private Pom_Manager pm;
 
-	@Test(priority = 0, dependsOnMethods = { "com.runner.CustomerLogin_Runner.loginCustomer" })
+	@Test(testName= "Customer_Dataset_upload", priority = 0, dependsOnMethods = { "com.runner.CustomerLogin_Runner.loginCustomer" })
 	public void uploadDataset() throws InterruptedException, AWTException, IOException {
 		pm = new Pom_Manager(driver);
 
@@ -52,7 +52,7 @@ public class CustomerDashboard_Runner extends BaseClass {
 		BaseClass_Element_Methods.click(clickUpload);
 
 //		Thread.sleep(4000);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOfElementLocated
 				(By.xpath("//div[@class='d-flex justify-content-center align-items-center my-2']")));
 		BaseClass_Element_Methods.click(pm.cd().getChooseAFile());

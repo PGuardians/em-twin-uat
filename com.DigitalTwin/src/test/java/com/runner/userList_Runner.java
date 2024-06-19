@@ -28,7 +28,7 @@ public class userList_Runner extends BaseClass {
         return data;
     }
 
-    @Test(priority = 0,dataProvider = "userData")
+    @Test(testName = "Create_user's", priority = 0,dataProvider = "userData")
     public void createUser(String firstName, String lastName, String email, String role) throws InterruptedException {
         pm = new Pom_Manager(driver);
         Thread.sleep(5000);
@@ -68,7 +68,7 @@ public class userList_Runner extends BaseClass {
     }   
     
     
-    @Test(priority = 1)
+    @Test(testName= "Search_Customer", priority = 1)
     public void searchCustomer() throws InterruptedException {
     	
 //    	Thread.sleep(5000);
@@ -93,7 +93,7 @@ public class userList_Runner extends BaseClass {
 	}
     
     
-    @Test(priority = 2)
+    @Test(testName= "Search_DataScientist",priority = 2)
     public void searchDatascientist() throws InterruptedException {
 		
 //    	Thread.sleep(5000);
@@ -116,7 +116,7 @@ public class userList_Runner extends BaseClass {
 	}  
     
     
-    @Test(priority = 3)
+    @Test(testName= "Search_Developer", priority = 3)
     public void searchDeveloper() throws InterruptedException {
 		
 //    	Thread.sleep(5000);
@@ -139,7 +139,7 @@ public class userList_Runner extends BaseClass {
 	}
     
     
-    @Test(priority = 4)//dlt customer
+    @Test(testName= "Delete_Customer", priority = 4)//dlt customer
     public void deleteCustomer() throws InterruptedException {
     	Thread.sleep(2000);
     	BaseClass_Element_Methods.sendKeys(pm.ul().getSearchBox(),"twinarcdemo@gmail.com");
@@ -156,7 +156,7 @@ public class userList_Runner extends BaseClass {
     	BaseClass_Element_Methods.click(pm.ul().getDeleteUser());
     	Thread.sleep(2000);
     	BaseClass_Driver_Methods.navigateBack(driver);
-    	System.out.println("success!....Delete customer");
+    	System.out.println("success!....Delete customer"+" Srinivasan Sud");
 //    	Thread.sleep(3000);
     	Thread.sleep(2000);
     	WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -165,7 +165,7 @@ public class userList_Runner extends BaseClass {
 	}
     
     
-    @Test(priority = 5)//dlt Datascientist
+    @Test(testName= "Delete_DataScientist", priority = 5)//dlt Datascientist
     public void deleteDatascientist() throws InterruptedException {
     	Thread.sleep(2000);
     	BaseClass_Element_Methods.sendKeys(pm.ul().getSearchBox(), "JAMES");
@@ -188,7 +188,7 @@ public class userList_Runner extends BaseClass {
 	}
     
     
-    @Test(priority = 6)//dlt developer
+    @Test(testName= "Delete_Developer", priority = 6)//dlt developer
     public void deleteDeveloper() throws InterruptedException {
     	Thread.sleep(2000);
     	BaseClass_Element_Methods.sendKeys(pm.ul().getSearchBox(), "WILLIAM");

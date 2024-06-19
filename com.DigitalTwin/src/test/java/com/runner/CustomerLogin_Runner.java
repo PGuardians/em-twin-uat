@@ -21,13 +21,13 @@ public class CustomerLogin_Runner extends BaseClass{
 	
 	 private Pom_Manager pm;
 	
-	@Test(priority = 0,dependsOnMethods = {"com.runner.viewProfile_Runner.logOut"})
+	@Test(testName= "Customer_initializeDriver", priority = 0,dependsOnMethods = {"com.runner.viewProfile_Runner.logOut"})
 	public void setUp() throws IOException {
         initializeDriver();
         pm = new Pom_Manager(driver); // Initialize Pom_Manager
     }
 	
-    @Test(priority = 1,dependsOnMethods= {"com.runner.CustomerLogin_Runner.setUp"})
+    @Test(testName= "Customer_Login", priority = 1,dependsOnMethods= {"com.runner.CustomerLogin_Runner.setUp"})
 	public void loginCustomer() throws InterruptedException, IOException {
     	Thread.sleep(2000);
     	
