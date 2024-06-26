@@ -1,6 +1,7 @@
-com\runner\CustomerDashboard_Runner.class
 com\runner\Customer_View_Profile_Runner.class
-com\runner\CustomerLogin_Runner.class
 com\runner\userList_Runner.class
+com\runner\CustomerDashboard_Runner.class
+com\runner\TestListerners_Runner.class
+com\runner\CustomerLogin_Runner.class
 com\runner\Login_Runner.class
 com\runner\viewProfile_Runner.class

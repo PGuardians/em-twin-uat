@@ -55,9 +55,9 @@ public class CustomerLogin_Runner extends BaseClass{
         String adminUrl = driver.getCurrentUrl();
         System.out.println(adminUrl);
         if(adminUrl != "https://digitaltwinarc-uat.ddns.net/" ) {
-        	System.out.println("Admin login -- SUCCESS...!");
+        	System.out.println("Customer login -- SUCCESS...!");
         }else {
-        	System.out.println("Admin login -- FAILED...?");
+        	System.out.println("Customer login -- FAILED...?");
         }
         Thread.sleep(2000);
     }        

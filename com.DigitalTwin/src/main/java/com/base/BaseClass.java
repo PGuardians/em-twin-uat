@@ -16,12 +16,9 @@ import com.utils.BaseClass_Driver_Methods;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
-
 public class BaseClass {
 	public static WebDriver driver;
-	
-	
+		
 	 private static boolean isLinux() {
 	        String osName = System.getProperty("os.name").toLowerCase();
 	        return osName.contains("linux");
@@ -31,7 +28,6 @@ public class BaseClass {
 
 		String browserName = ConfigReader.getPropertyFromKey("browser");
 		String url = ConfigReader.getPropertyFromKey("url");
-		
 		
 		try {
 			if (browserName.equalsIgnoreCase("chrome")) {
@@ -50,8 +46,6 @@ public class BaseClass {
 				 * 
 				 * driver = new ChromeDriver();
 				 */
-				
-				
 				
 				if(isLinux()) {
 					//System.setProperty("webdriver.chrome.driver", Env_Reader.getPropertyFromKey("Ldriverloc"));
@@ -72,11 +66,9 @@ public class BaseClass {
 					driver = new ChromeDriver();
 				}
 				
-				 
-
 				LogReader.logInfo("chrome browser launched");
-			} /*
-				 * else if (browserName.equalsIgnoreCase("Edge")) {
+			}   /*
+			     * else if (browserName.equalsIgnoreCase("Edge")) {
 				 * WebDriverManager.edgedriver().setup(); driver = new EdgeDriver(); } else if
 				 * (browserName.equalsIgnoreCase("Firefox")) {
 				 * WebDriverManager.firefoxdriver().setup(); driver = new FirefoxDriver(); }
@@ -106,6 +98,6 @@ public class BaseClass {
 	}
 
 	// Creating instances of helper classes
-	/* BaseClass_Driver_Methods BSDM = new BaseClass_Driver_Methods(driver); */
+	// BaseClass_Driver_Methods BSDM = new BaseClass_Driver_Methods(driver);
 	// Add instances of other helper classes if needed
 }

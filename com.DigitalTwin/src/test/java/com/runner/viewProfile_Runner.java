@@ -127,28 +127,6 @@ public class viewProfile_Runner extends BaseClass{
         } catch (IOException e) {
             System.err.println("Error occurred while overwriting the file: " + e.getMessage());
         }   
-//	}
-//	    BaseClass_Element_Methods.sendKeys(pm.up().getNewPassword(), newPassword);
-//	    BaseClass_Element_Methods.sendKeys(pm.up().getConfirmnewPassword(), newPassword); 
-//	    BaseClass_Element_Methods.click(pm.up().getSaveChanges());
-//	    System.out.println(newPassword);
-//	    System.out.println("Update password .... success!");
-//	    Thread.sleep(3000);
-//	    String filePath = Env_Reader.getPropertyFromKey("Apass");
-//	    String filePath = "C:\\Users\\Dell\\Downloads\\com.DigitalTwin(2)\\com.DigitalTwin\\forgetPasskey_Dictonary.txt"; // Specify the path to your file
-//	    String content = newPassword; // New text to overwrite the file
-//        try {
-//            // Read the file content
-//            Path path = Paths.get(filePath);
-//            String contents = Files.readString(path);
-//            // Modify the content
-//            contents = newPassword;
-//            // Write the modified content back to the file
-//            Files.write(path, content.getBytes());
-//            System.out.println("File overwritten successfully.");
-//        } catch (IOException e) {
-//            System.err.println("Error occurred while overwriting the file: " + e.getMessage());
-//        }   
 	}
 	
 	@Test(testName= "Admin_Re-login_with_newPassword", priority = 2,dependsOnMethods = {"com.runner.viewProfile_Runner.changePassword"})
@@ -166,9 +144,9 @@ public class viewProfile_Runner extends BaseClass{
 	        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(5));
 	        try {
 	            wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Login']")));
-	            System.out.println("success!....Re-login");
-	        } catch (Exception e) {
 	            System.out.println("Failed?....Re-login");
+	        } catch (Exception e) {
+	            System.out.println("Success!....Re-login");
 	        }		
 	}
 	
@@ -186,14 +164,15 @@ public class viewProfile_Runner extends BaseClass{
 		 WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(5));
 	        try {
 	            wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[text()='Logout']")));
-	            System.out.println("success!....Re-logout");
+	            System.out.println("Failed?....Admin Re-logout");
 	        } catch (Exception e) {
-	            System.out.println("Failed?....Re-logout");
+	            System.out.println("Success!....Admin Re-logout");
 	        }
 	}	
 	@AfterClass
 	public void adminEnd() {
 		driver.quit();
+		 System.out.println("Admin ... flow Completed here");
 		 System.out.println("Admin...view...tab...closed");
 	}
 }

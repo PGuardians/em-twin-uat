@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [DT-TestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.runner.TestListerners_Runner"/>
+  </listeners>
   <test name="TwinArc-Test">
     <classes>
       <class name="com.runner.Login_Runner"/>
@@ -13,39 +16,6 @@
   </test> <!-- TwinArc-Test -->
   <test parallel="none" name="TwinArc-Test(failed)">
     <classes>
-      <class name="com.runner.Login_Runner">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.runner.Login_Runner -->
-      <class name="com.runner.CustomerLogin_Runner">
-        <methods>
-          <include name="loginCustomer"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.runner.CustomerLogin_Runner -->
-      <class name="com.runner.CustomerDashboard_Runner">
-        <methods>
-          <include name="uploadDataset"/>
-        </methods>
-      </class> <!-- com.runner.CustomerDashboard_Runner -->
-      <class name="com.runner.Customer_View_Profile_Runner">
-        <methods>
-          <include name="changeCustomerPassword"/>
-          <include name="checkCustomerLogin"/>
-          <include name="clickChangeCustomerPassword"/>
-          <include name="logOut"/>
-          <include name="endTest"/>
-        </methods>
-      </class> <!-- com.runner.Customer_View_Profile_Runner -->
-      <class name="com.runner.viewProfile_Runner">
-        <methods>
-          <include name="changePassword"/>
-          <include name="logOut"/>
-          <include name="checkLogin"/>
-          <include name="clickChangePassword"/>
-        </methods>
-      </class> <!-- com.runner.viewProfile_Runner -->
       <class name="com.runner.userList_Runner">
         <methods>
           <include name="searchDeveloper"/>
@@ -57,6 +27,41 @@
           <include name="searchCustomer"/>
         </methods>
       </class> <!-- com.runner.userList_Runner -->
+      <class name="com.runner.viewProfile_Runner">
+        <methods>
+          <include name="changePassword"/>
+          <include name="adminEnd"/>
+          <include name="logOut"/>
+          <include name="checkLogin"/>
+          <include name="clickChangePassword"/>
+        </methods>
+      </class> <!-- com.runner.viewProfile_Runner -->
+      <class name="com.runner.CustomerLogin_Runner">
+        <methods>
+          <include name="loginCustomer"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.runner.CustomerLogin_Runner -->
+      <class name="com.runner.Customer_View_Profile_Runner">
+        <methods>
+          <include name="changeCustomerPassword"/>
+          <include name="checkCustomerLogin"/>
+          <include name="clickChangeCustomerPassword"/>
+          <include name="logOut"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- com.runner.Customer_View_Profile_Runner -->
+      <class name="com.runner.CustomerDashboard_Runner">
+        <methods>
+          <include name="uploadDataset"/>
+        </methods>
+      </class> <!-- com.runner.CustomerDashboard_Runner -->
+      <class name="com.runner.Login_Runner">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginUser" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.runner.Login_Runner -->
     </classes>
   </test> <!-- TwinArc-Test(failed) -->
 </suite> <!-- Failed suite [DT-TestSuite] -->

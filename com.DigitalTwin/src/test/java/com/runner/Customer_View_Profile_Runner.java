@@ -197,15 +197,21 @@ public class Customer_View_Profile_Runner extends BaseClass{
 		 BaseClass_Element_Methods.click(pm.cp().getClickProfile());
 		 Thread.sleep(1000);
 		 BaseClass_Element_Methods.click(pm.lp().getLogOut());
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+	        try {
+	            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[text()='Logout']")));
+	            System.out.println("Failed?....Customer Re-logout");
+	        } catch (Exception e) {
+	            System.out.println("Success!....Customer Re-logout");
+	        }
 		 System.out.println("Customer Logged out successfully");
 		 driver.quit();
+		 System.out.println("Customer ... flow Completed here");
 		 System.out.println("All the windows closed..");
 	}
 	
 	@AfterTest()
 	public void endTest() {
-//		ExtentReports extents = ExtentManager.Login_Runner();
-//		extentReport.flush();
 		driver.quit();
 	}
 }

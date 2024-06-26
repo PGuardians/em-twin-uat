@@ -31,7 +31,10 @@ public class userList_Runner extends BaseClass {
     @Test(testName = "Create_user's", priority = 0,dataProvider = "userData")
     public void createUser(String firstName, String lastName, String email, String role) throws InterruptedException {
         pm = new Pom_Manager(driver);
-        Thread.sleep(5000);
+        Thread.sleep(10000);
+//        WebDriverWait wait0 = new WebDriverWait(driver, Duration.ofSeconds(10000));
+//        wait0.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[text()='Incorrect password']")));
+        
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[text()='Create User']")));
         BaseClass_Element_Methods.click(pm.ul().getCreateUser());
